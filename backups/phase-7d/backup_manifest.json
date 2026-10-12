@@ -1,0 +1,95 @@
+{
+  "phase": "7D",
+  "created_at_utc": "2026-10-12T16:11:11.342933+00:00",
+  "backup_directory": "backups/phase-7d",
+  "files": [
+    {
+      "original_file_path": "web/src/analytics/mastery.ts",
+      "backup_file_path": "backups/phase-7d/web/src/analytics/mastery.ts",
+      "sha256": "5c0356c92add17625d1cc66a161b512fe090d5e87eacc175623736506dbd6964",
+      "file_size_bytes": 3298,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/analytics/index.ts",
+      "backup_file_path": "backups/phase-7d/web/src/analytics/index.ts",
+      "sha256": "785b710aacd25e17f792e067721abcf2639396f964df7414b1f4d77bb0d64935",
+      "file_size_bytes": 7312,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/analytics/types.ts",
+      "backup_file_path": "backups/phase-7d/web/src/analytics/types.ts",
+      "sha256": "24655fc5e304177e84feb91185754659afa63e23dc45648076aee28855c60d5b",
+      "file_size_bytes": 1250,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/analytics/analytics.test.ts",
+      "backup_file_path": "backups/phase-7d/web/src/analytics/analytics.test.ts",
+      "sha256": "f88b097e6c8c711e63440c8a96a58d74c38114064ee84bfe9d554989b89eee17",
+      "file_size_bytes": 4119,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/storage.ts",
+      "backup_file_path": "backups/phase-7d/web/src/storage.ts",
+      "sha256": "60c4ad87bbb6f83d31023a16e0fd354aeca34bf6412d7999dcb4cdf8c7a7d6b6",
+      "file_size_bytes": 3257,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/storage.test.ts",
+      "backup_file_path": "backups/phase-7d/web/src/storage.test.ts",
+      "sha256": "3590be8e3f835c7653759e4bd3c23ef13f9d81831f7b24dbcd24cb1066b48e30",
+      "file_size_bytes": 2750,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/App.tsx",
+      "backup_file_path": "backups/phase-7d/web/src/App.tsx",
+      "sha256": "9d9adb4dac14b5ff602b24468ebd90481736e2cb16a418269d0aa3ef4a1e64a2",
+      "file_size_bytes": 24442,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/Phase7C.tsx",
+      "backup_file_path": "backups/phase-7d/web/src/Phase7C.tsx",
+      "sha256": "1ceeb45225fd9c748508c07aa284f4a51c72d3847493d48b682449202dfcf55d",
+      "file_size_bytes": 13873,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/styles.css",
+      "backup_file_path": "backups/phase-7d/web/src/styles.css",
+      "sha256": "5bd13d2aef11c72d5a041965ceb70ea65f061989925627874bf2e1d6d32e8949",
+      "file_size_bytes": 9499,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "README.md",
+      "backup_file_path": "backups/phase-7d/README.md",
+      "sha256": "aafc08d69dd64816cebb4e22da0b8943e6c83aa3429034445385f4ff88ff80dd",
+      "file_size_bytes": 3550,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "PROJECT_REPORT.md",
+      "backup_file_path": "backups/phase-7d/PROJECT_REPORT.md",
+      "sha256": "1a24734629943ffd50c2cd2a5ce988ab5f2528108e9285b7cf26998e273ab757",
+      "file_size_bytes": 7643,
+      "backup_creation_timestamp": "2026-10-12T16:11:11.342933+00:00",
+      "backup_verified": true
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+import{defineConfig}from'@playwright/test';import base from'./playwright.config';
+export default defineConfig({...base,testIgnore:[],testMatch:'pages-smoke.spec.ts',use:{...base.use,baseURL:'http://127.0.0.1:4174/Phy-Chem-Final/'},webServer:{command:'pnpm build --mode github-pages && pnpm exec vite preview --base /Phy-Chem-Final/ --host 127.0.0.1 --port 4174 --strictPort',url:'http://127.0.0.1:4174/Phy-Chem-Final/',reuseExistingServer:false,timeout:60_000}});

@@ -1,0 +1,705 @@
+{
+  "schema_version": 2,
+  "topics": [
+    {
+      "id": "K01",
+      "section": "Chemical Kinetics",
+      "title_th": "อัตราการเกิดปฏิกิริยา",
+      "priority": "P1",
+      "learning_objectives": [
+        "เชื่อมอัตราการลดลงและเพิ่มขึ้นด้วยสัมประสิทธิ์สโตอิชิโอเมทรี"
+      ],
+      "concept_explanation": "อัตราปฏิกิริยาบอกการเปลี่ยนแปลงความเข้มข้นต่อเวลา ต้องหารด้วยสัมประสิทธิ์เพื่อให้อัตราจากทุก species เท่ากัน",
+      "definitions": {
+        "rate": "อัตราการเปลี่ยนแปลงต่อเวลา",
+        "instantaneous rate": "ความชันเส้นสัมผัส"
+      },
+      "key_points": [
+        "ดุลสมการก่อน",
+        "สารตั้งต้นใช้เครื่องหมายลบ",
+        "หน่วยต้องมี concentration/time"
+      ],
+      "formula_ids": [
+        "F-K-001"
+      ],
+      "worked_example": "จาก 4NH3+3O2→2N2+6H2O ถ้า d[N2]/dt=0.27 M s^-1 จะได้ d[H2O]/dt=0.81 M s^-1",
+      "common_mistakes": "ลืมหารด้วยสัมประสิทธิ์",
+      "quick_checks": [
+        "เหตุใดอัตราการหายไปของ NH3 จึงเป็น 0.54 M s^-1"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 8,
+          "printed_slide_number": 8
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "progress_key": "topic:K01"
+    },
+    {
+      "id": "K02",
+      "section": "Chemical Kinetics",
+      "title_th": "กฎอัตราและอันดับปฏิกิริยา",
+      "priority": "P1",
+      "learning_objectives": [
+        "หาอันดับย่อยจาก initial-rate data"
+      ],
+      "concept_explanation": "เปรียบเทียบคู่ทดลองที่เปลี่ยนความเข้มข้นเพียงตัวเดียว แล้วแก้อัตราส่วนเพื่อหา exponent",
+      "definitions": {
+        "rate law": "สมการเชิงทดลองระหว่าง rate กับ concentration",
+        "overall order": "ผลรวม exponent"
+      },
+      "key_points": [
+        "อันดับไม่จำเป็นต้องเท่าสัมประสิทธิ์",
+        "หน่วย k ใช้ตรวจมิติ"
+      ],
+      "formula_ids": [
+        "F-K-002"
+      ],
+      "worked_example": "ข้อมูล S2O8^2-/I- ให้ first order ต่อทั้งคู่และ k=8.09×10^-2 M^-1 s^-1",
+      "common_mistakes": "เปลี่ยนสองตัวแปรพร้อมกันโดยไม่ตั้งสมการ",
+      "quick_checks": [
+        "ถ้าเพิ่ม [A] 2 เท่าแล้ว rate เพิ่ม 4 เท่า อันดับต่อ A เท่าใด"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 17,
+          "printed_slide_number": 17
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 26,
+          "printed_slide_number": 25
+        }
+      ],
+      "progress_key": "topic:K02"
+    },
+    {
+      "id": "K03",
+      "section": "Chemical Kinetics",
+      "title_th": "Integrated Rate Laws",
+      "priority": "P1",
+      "learning_objectives": [
+        "เลือก linear form ให้ตรงกับ reaction order"
+      ],
+      "concept_explanation": "Integrated rate law เชื่อม [A] กับเวลา รูปกราฟที่เป็นเส้นตรงช่วยระบุอันดับ",
+      "definitions": {
+        "zero order": "[A] กับ t เป็นเส้นตรง",
+        "first order": "ln[A] กับ t เป็นเส้นตรง",
+        "second order": "1/[A] กับ t เป็นเส้นตรง"
+      },
+      "key_points": [
+        "ความชันมีเครื่องหมายต่างกัน",
+        "ตรวจหน่วย k"
+      ],
+      "formula_ids": [
+        "F-K-003",
+        "F-K-004",
+        "F-K-005"
+      ],
+      "worked_example": "N2O5 first order: [A]=0.25e^(-5.1×10^-4×192)=0.227 M",
+      "common_mistakes": "ใช้ log10 แทน ln โดยไม่ใส่ 2.303",
+      "quick_checks": [
+        "กราฟใดควรเป็นเส้นตรงสำหรับ first order"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 30
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 51,
+          "printed_slide_number": 50
+        }
+      ],
+      "progress_key": "topic:K03"
+    },
+    {
+      "id": "K04",
+      "section": "Chemical Kinetics",
+      "title_th": "ครึ่งชีวิต",
+      "priority": "P1",
+      "learning_objectives": [
+        "เปรียบเทียบการขึ้นกับ [A]0 ของ t1/2"
+      ],
+      "concept_explanation": "อันดับหนึ่งมีครึ่งชีวิตคงที่ ส่วนอันดับศูนย์และอันดับสองขึ้นกับความเข้มข้นเริ่มต้น",
+      "definitions": {
+        "half-life": "เวลาที่ [A] เหลือครึ่งหนึ่ง"
+      },
+      "key_points": [
+        "first order ไม่ขึ้นกับ [A]0",
+        "second order แปรผกผันกับ [A]0"
+      ],
+      "formula_ids": [
+        "F-K-006",
+        "F-K-007",
+        "F-K-008"
+      ],
+      "worked_example": "k=5.1×10^-4 s^-1 ให้ t1/2=0.693/k=1.36×10^3 s",
+      "common_mistakes": "ใช้สูตรครึ่งชีวิตผิดอันดับ",
+      "quick_checks": [
+        "เหตุใดกราฟหน้า 39 จึงลดครึ่งหนึ่งในช่วงเวลาคงที่"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 33,
+          "printed_slide_number": 32
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 51,
+          "printed_slide_number": 50
+        }
+      ],
+      "progress_key": "topic:K04"
+    },
+    {
+      "id": "K05",
+      "section": "Chemical Kinetics",
+      "title_th": "Activation Energy และ Reaction Coordinate",
+      "priority": "P1",
+      "learning_objectives": [
+        "อ่าน Ea ไปข้างหน้า ย้อนกลับ และ ΔH จากกราฟ"
+      ],
+      "concept_explanation": "ยอดกราฟคือ activated complex; ความต่างพลังงานจาก reactants ถึงยอดคือ Ea forward",
+      "definitions": {
+        "activated complex": "โครงสร้างพลังงานสูงชั่วขณะ",
+        "Ea": "พลังงานก่อกัมมันต์"
+      },
+      "key_points": [
+        "endothermic มีผลิตภัณฑ์พลังงานสูงกว่า",
+        "catalyst ลด Ea แต่ไม่เปลี่ยน ΔH"
+      ],
+      "formula_ids": [
+        "F-K-009"
+      ],
+      "worked_example": "กราฟหน้า 60: Ea,f=10-5=5 และ ΔH=7-5=+2 ในหน่วยแกนพลังงาน",
+      "common_mistakes": "สลับ Ea กับ ΔH",
+      "quick_checks": [
+        "ตัวเร่งเปลี่ยนค่า ΔH หรือไม่"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 58,
+          "printed_slide_number": 57
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 61,
+          "printed_slide_number": 60
+        }
+      ],
+      "progress_key": "topic:K05"
+    },
+    {
+      "id": "K06",
+      "section": "Chemical Kinetics",
+      "title_th": "Arrhenius Equation",
+      "priority": "P3",
+      "learning_objectives": [
+        "คำนวณ Ea หรืออัตราส่วน k ที่สองอุณหภูมิ"
+      ],
+      "concept_explanation": "ln k กับ 1/T เป็นเส้นตรง ความชันเท่ากับ -Ea/R",
+      "definitions": {
+        "A": "frequency/orientation factor",
+        "Ea": "activation energy"
+      },
+      "key_points": [
+        "T ต้องเป็น kelvin",
+        "Ea กับ R ต้องใช้หน่วยเดียวกัน"
+      ],
+      "formula_ids": [
+        "F-K-009",
+        "F-K-010"
+      ],
+      "worked_example": "แทน k1,k2,T1,T2 ในสมการสองอุณหภูมิ แล้วแก้ Ea พร้อมตรวจ J↔kJ",
+      "common_mistakes": "ใช้ °C ตรง ๆ",
+      "quick_checks": [
+        "เมื่อ T เพิ่ม k เปลี่ยนอย่างไรโดยทั่วไป"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 64,
+          "printed_slide_number": 63
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 70,
+          "printed_slide_number": 69
+        }
+      ],
+      "progress_key": "topic:K06"
+    },
+    {
+      "id": "K07",
+      "section": "Chemical Kinetics",
+      "title_th": "Reaction Mechanism",
+      "priority": "P1",
+      "learning_objectives": [
+        "ระบุ intermediate และ rate-determining step"
+      ],
+      "concept_explanation": "กลไกคือชุด elementary steps ผลรวมต้องให้สมการรวม intermediate เกิดแล้วถูกใช้หมด",
+      "definitions": {
+        "intermediate": "เกิดในขั้นหนึ่งและถูกใช้ในขั้นถัดไป",
+        "molecularity": "จำนวน species ใน elementary step"
+      },
+      "key_points": [
+        "ตัด intermediate เมื่อรวมสมการ",
+        "ขั้นช้ามักควบคุม rate"
+      ],
+      "formula_ids": [],
+      "worked_example": "กลไก H2O2/I-: IO- เป็น intermediate และขั้นที่ 1 ช้า",
+      "common_mistakes": "เขียน intermediate ไว้ในสมการรวม",
+      "quick_checks": [
+        "เหตุใด molecularity จึงไม่เป็นเศษส่วน"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 72,
+          "printed_slide_number": 71
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 77,
+          "printed_slide_number": 76
+        }
+      ],
+      "progress_key": "topic:K07"
+    },
+    {
+      "id": "K08",
+      "section": "Chemical Kinetics",
+      "title_th": "Catalysis และ Encounter in Solution",
+      "priority": "P1",
+      "learning_objectives": [
+        "เปรียบเทียบ collision ในแก๊สกับ encounter ในสารละลาย"
+      ],
+      "concept_explanation": "ในสารละลาย solvent cage ทำให้คู่โมเลกุลชนซ้ำหลายครั้งก่อนแยก จึงต้องแยก encounter frequency จาก successful reaction",
+      "definitions": {
+        "solvent cage": "บริเวณเพื่อนบ้านตัวทำละลาย",
+        "encounter": "การอยู่ใกล้กันของคู่โมเลกุล"
+      },
+      "key_points": [
+        "collision count เท่ากันไม่ได้แปลว่า pattern เท่ากัน",
+        "ตัวเร่งเปลี่ยนเส้นทางกลไก"
+      ],
+      "formula_ids": [],
+      "worked_example": "ภาพหน้า 161 แสดงการชนกระจายในแก๊สแต่จับกลุ่มเป็น encounters ในสารละลาย",
+      "common_mistakes": "ใช้ทฤษฎีแก๊สกับสารละลายโดยไม่พิจารณา cage",
+      "quick_checks": [
+        "encounter effect ส่งผลต่อ pattern การชนอย่างไร"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 86,
+          "printed_slide_number": 85
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 162,
+          "printed_slide_number": 161
+        }
+      ],
+      "progress_key": "topic:K08"
+    },
+    {
+      "id": "E01",
+      "section": "Electrochemistry",
+      "title_th": "Electrolyte Solution",
+      "priority": "P3",
+      "learning_objectives": [
+        "จำแนก strong, weak และ non-electrolyte"
+      ],
+      "concept_explanation": "การนำไฟฟ้าเกิดจากไอออนเคลื่อนที่ strong electrolyte แตกตัวเกือบสมบูรณ์ ส่วน weak แตกตัวบางส่วน",
+      "definitions": {
+        "electrolyte": "สารที่ให้ไอออนในตัวทำละลาย",
+        "dissociation": "การแยกเป็นไอออน"
+      },
+      "key_points": [
+        "ความแรงไม่เท่ากับความเข้มข้น",
+        "non-electrolyte ไม่มีไอออนนำไฟฟ้า"
+      ],
+      "formula_ids": [],
+      "worked_example": "เปรียบเทียบ NaCl, CH3COOH และ sucrose ที่ความเข้มข้นใกล้กัน",
+      "common_mistakes": "สับสน strong กับ concentrated",
+      "quick_checks": [
+        "CH3COOH เข้มข้นมากยังเป็น weak electrolyte หรือไม่"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 5,
+          "printed_slide_number": 5
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 12,
+          "printed_slide_number": 12
+        }
+      ],
+      "progress_key": "topic:E01"
+    },
+    {
+      "id": "E02",
+      "section": "Electrochemistry",
+      "title_th": "Dielectric Constant",
+      "priority": "P1",
+      "learning_objectives": [
+        "อธิบายผลของ εr ต่อแรงระหว่างประจุ"
+      ],
+      "concept_explanation": "ตัวกลางที่มี εr สูงลด interaction energy ระหว่างไอออน และ εr ของน้ำลดเมื่ออุณหภูมิสูงขึ้นตามตาราง",
+      "definitions": {
+        "dielectric constant": "อัตราส่วน permittivity ของตัวกลางต่อสุญญากาศ"
+      },
+      "key_points": [
+        "εr ไม่มีหน่วย",
+        "อุณหภูมิมีผลต่อ εr"
+      ],
+      "formula_ids": [],
+      "worked_example": "น้ำที่ 25 °C มี εr≈78.54 และที่ 100 °C≈55.33",
+      "common_mistakes": "ใช้ค่าที่ 25 °C กับทุกอุณหภูมิ",
+      "quick_checks": [
+        "เมื่อ εr ลด แรงดึงดูดระหว่างประจุเปลี่ยนอย่างไร"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 17,
+          "printed_slide_number": 17
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 22,
+          "printed_slide_number": 22
+        }
+      ],
+      "progress_key": "topic:E02"
+    },
+    {
+      "id": "E03",
+      "section": "Electrochemistry",
+      "title_th": "Conductance และ Molar Conductivity",
+      "priority": "P1",
+      "learning_objectives": [
+        "แยก G, κ และ Λm พร้อมหน่วย"
+      ],
+      "concept_explanation": "G ขึ้นกับรูปทรงเซลล์ κ เป็นสมบัติของสารละลาย และ Λm ปรับด้วย concentration",
+      "definitions": {
+        "cell constant": "l/A",
+        "conductivity": "conductance ที่ปรับรูปทรงแล้ว"
+      },
+      "key_points": [
+        "κ ไม่เท่ากับ G",
+        "ติดตาม factor 1000 ในหน่วย cm"
+      ],
+      "formula_ids": [
+        "F-E-001",
+        "F-E-002",
+        "F-E-005"
+      ],
+      "worked_example": "κ=4.95×10^-5 S cm^-1, c=0.001028 M ให้ Λm=48.15 S cm2 mol^-1",
+      "common_mistakes": "ลืม 1000 หรือผสม m กับ cm",
+      "quick_checks": [
+        "G และ κ ต่างกันอย่างไร"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 31
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 50,
+          "printed_slide_number": 50
+        }
+      ],
+      "progress_key": "topic:E03"
+    },
+    {
+      "id": "E04",
+      "section": "Electrochemistry",
+      "title_th": "Degree of Dissociation",
+      "priority": "P1",
+      "learning_objectives": [
+        "คำนวณ α และ Ka จาก conductivity"
+      ],
+      "concept_explanation": "สำหรับ weak electrolyte ใช้ Λm/Λ° ประมาณส่วนที่แตกตัว แล้วใช้ Ostwald law",
+      "definitions": {
+        "α": "สัดส่วนการแตกตัว"
+      },
+      "key_points": [
+        "0≤α≤1",
+        "ใช้ Λ° ของ electrolyte เดียวกัน"
+      ],
+      "formula_ids": [
+        "F-E-003",
+        "F-E-004"
+      ],
+      "worked_example": "acetic acid example ให้ α=0.1233 และ Ka=1.78×10^-5",
+      "common_mistakes": "นำ κ หาร Λ° โดยไม่แปลงเป็น Λm",
+      "quick_checks": [
+        "ถ้า Λm เพิ่มเมื่อเจือจาง α เปลี่ยนอย่างไร"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 46,
+          "printed_slide_number": 46
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "progress_key": "topic:E04"
+    },
+    {
+      "id": "E05",
+      "section": "Electrochemistry",
+      "title_th": "Ionic Mobility",
+      "priority": "P3",
+      "learning_objectives": [
+        "เชื่อม mobility กับ ionic conductivity"
+      ],
+      "concept_explanation": "mobility คือ drift velocity ต่อ potential gradient และสัมพันธ์กับ limiting ionic conductivity ผ่านประจุและ Faraday constant",
+      "definitions": {
+        "mobility": "u=v/(potential gradient)"
+      },
+      "key_points": [
+        "ระบุระบบหน่วย",
+        "H+ และ OH- มีกลไก Grotthuss จึง mobility สูง"
+      ],
+      "formula_ids": [],
+      "worked_example": "อธิบาย proton hopping จากโครงข่าย hydrogen bond",
+      "common_mistakes": "ใช้ความเร็วเฉลี่ยเชิงความร้อนแทน drift velocity",
+      "quick_checks": [
+        "เหตุใด H+ จึงเคลื่อนที่ดูเหมือนเร็วผิดปกติ"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 49,
+          "printed_slide_number": 49
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 60,
+          "printed_slide_number": 60
+        }
+      ],
+      "progress_key": "topic:E05"
+    },
+    {
+      "id": "E06",
+      "section": "Electrochemistry",
+      "title_th": "Ionic Activity และ Ionic Strength",
+      "priority": "P1",
+      "learning_objectives": [
+        "คำนวณ I, γ± และ activity"
+      ],
+      "concept_explanation": "activity แทน effective concentration; ionic strength ให้น้ำหนักกำลังสองของประจุ",
+      "definitions": {
+        "activity": "effective concentration",
+        "γ": "activity coefficient"
+      },
+      "key_points": [
+        "z ต้องยกกำลังสองใน I",
+        "γ เข้าใกล้ 1 เมื่อเจือจางมาก"
+      ],
+      "formula_ids": [
+        "F-E-006",
+        "F-E-007",
+        "F-E-008"
+      ],
+      "worked_example": "0.01 M CuSO4 ให้ I=0.04 M, logγ±=-0.407, γ±=0.392",
+      "common_mistakes": "ลืมรวมทั้ง cation และ anion",
+      "quick_checks": [
+        "0.01 M CaCl2 มี I เท่าใด"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 68,
+          "printed_slide_number": 68
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "progress_key": "topic:E06"
+    },
+    {
+      "id": "E07",
+      "section": "Electrochemistry",
+      "title_th": "Salting-in และ Salting-out",
+      "priority": "P1",
+      "learning_objectives": [
+        "แยกช่วง ionic strength ที่เพิ่มหรือลด solubility"
+      ],
+      "concept_explanation": "ที่ ionic strength ต่ำ activity effects อาจเพิ่ม apparent solubility (salting-in); ที่สูงมี solvent competition และ salting-out",
+      "definitions": {
+        "salting-in": "การละลายเพิ่มเมื่อเติมเกลือในช่วงหนึ่ง",
+        "salting-out": "การละลายลดเมื่อเติมเกลือมาก"
+      },
+      "key_points": [
+        "DHLL ใช้ได้เฉพาะช่วงเจือจาง",
+        "อย่าเหมารวมแนวโน้มตลอดช่วง I"
+      ],
+      "formula_ids": [],
+      "worked_example": "AgCl อาจแสดง S เพิ่มช่วง I ต่ำ ก่อนลดที่ I สูง",
+      "common_mistakes": "ใช้ Debye-Huckel limiting law นอกช่วง",
+      "quick_checks": [
+        "เหตุใด salting-out ของโปรตีนสัมพันธ์กับ hydration shell"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 89,
+          "printed_slide_number": 89
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 92,
+          "printed_slide_number": 92
+        }
+      ],
+      "progress_key": "topic:E07"
+    },
+    {
+      "id": "E09",
+      "section": "Electrochemistry",
+      "title_th": "Electrochemical Cell",
+      "priority": "P1",
+      "learning_objectives": [
+        "ระบุ anode/cathode และคำนวณ Ecell"
+      ],
+      "concept_explanation": "oxidation เกิดที่ anode, reduction เกิดที่ cathode ทั้ง galvanic และ electrolytic แต่เครื่องหมายขั้วต่างกันตามชนิดเซลล์",
+      "definitions": {
+        "anode": "ขั้วที่ oxidation",
+        "cathode": "ขั้วที่ reduction"
+      },
+      "key_points": [
+        "จำ AnOx, RedCat",
+        "ใช้ reduction potentials ใน Ecell=Ec-Ea"
+      ],
+      "formula_ids": [
+        "F-E-009"
+      ],
+      "worked_example": "Fumarate/NADH: Ecell=0.031-(-0.320)=0.351 V",
+      "common_mistakes": "กลับเครื่องหมายศักย์แล้วลบซ้ำ",
+      "quick_checks": [
+        "ใน galvanic cell อิเล็กตรอนไหลจากขั้วใดไปขั้วใด"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 95,
+          "printed_slide_number": 95
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "progress_key": "topic:E09"
+    },
+    {
+      "id": "E10",
+      "section": "Electrochemistry",
+      "title_th": "Cell Thermodynamics และ Nernst Equation",
+      "priority": "P2",
+      "learning_objectives": [
+        "เชื่อม E, ΔG, K และ Q"
+      ],
+      "concept_explanation": "E>0 สอดคล้องกับ ΔG<0 สำหรับทิศปฏิกิริยาที่เขียน; Nernst ปรับ E ตาม activity",
+      "definitions": {
+        "Q": "reaction quotient",
+        "standard potential": "ศักย์ภายใต้ standard state"
+      },
+      "key_points": [
+        "n มาจากสมการที่ดุล",
+        "solids ไม่อยู่ใน Q"
+      ],
+      "formula_ids": [
+        "F-E-010",
+        "F-E-011",
+        "F-E-012"
+      ],
+      "worked_example": "E°=0.351 V,n=2 ให้ ΔG°=-67.7 kJ mol^-1 และ logK=11.87",
+      "common_mistakes": "ใช้จำนวน e- ก่อนดุล",
+      "quick_checks": [
+        "ถ้า Q เพิ่ม E เปลี่ยนอย่างไรสำหรับ n คงที่"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 109,
+          "printed_slide_number": 109
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 119,
+          "printed_slide_number": 119
+        }
+      ],
+      "progress_key": "topic:E10"
+    },
+    {
+      "id": "E11",
+      "section": "Electrochemistry",
+      "title_th": "Electrodes และ Concentration Cell",
+      "priority": "P3",
+      "learning_objectives": [
+        "เขียน cell notation และหาศักย์จาก activity ratio"
+      ],
+      "concept_explanation": "concentration cell ใช้คู่รีดอกซ์เดียวกัน E°cell=0 แต่ E เกิดจากความต่าง activity",
+      "definitions": {
+        "SHE": "standard hydrogen electrode",
+        "salt bridge": "รักษาสมดุลประจุ"
+      },
+      "key_points": [
+        "เขียน anode ซ้าย cathode ขวาตาม convention",
+        "ใช้ activity ไม่ใช่ concentration เมื่อ nonideal"
+      ],
+      "formula_ids": [
+        "F-E-013"
+      ],
+      "worked_example": "สำหรับ M2+/M, a_high/a_low=100, n=2 ให้ E=0.05916 V",
+      "common_mistakes": "กลับอัตราส่วนทำให้ E ติดลบ",
+      "quick_checks": [
+        "เหตุใด E°cell ของ concentration cell เป็นศูนย์"
+      ],
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 120,
+          "printed_slide_number": 120
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 132,
+          "printed_slide_number": 132
+        }
+      ],
+      "progress_key": "topic:E11"
+    }
+  ]
+}

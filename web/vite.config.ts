@@ -1,0 +1,1 @@
+import { defineConfig } from 'vitest/config'; import react from '@vitejs/plugin-react'; export default defineConfig(({mode})=>({plugins:[react()],base:mode==='github-pages'?'/Phy-Chem-Final/':'./',test:{fileParallelism:false,isolate:false,exclude:['e2e/**','node_modules/**','dist/**']}}));

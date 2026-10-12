@@ -1,0 +1,14 @@
+# Dependencies and generated web artifacts
+web/node_modules/
+tests/node_modules/
+web/dist/
+web/test-results/
+web/*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
+
+# Generated scratch files
+tmp/
+*.log
+.DS_Store
+Thumbs.db

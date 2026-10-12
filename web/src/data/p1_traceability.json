@@ -1,0 +1,2001 @@
+{
+  "schema_version": "1.1.0",
+  "phase": "7A",
+  "relationship_model": "additive-many-to-many",
+  "authoritative_topic_registry": "data/topics.json",
+  "lesson_model_note": "ระบบปัจจุบันใช้ Topic เป็นหน่วยบทเรียน; related_lesson_ids จึงอ้าง Topic ID เดิมโดยไม่สร้างหรือเปลี่ยน ID",
+  "worked_example_model_note": "ตัวอย่างทำงานอยู่ในฟิลด์ worked_example ของ Topic; การอ้างอิงใช้ lesson_id+field เพื่อให้ตรวจสอบได้โดยไม่สร้าง ID เทียม",
+  "status_definitions": {
+    "VERIFIED": "ตรวจยืนยันความสัมพันธ์กับเนื้อหาและแหล่งอ้างอิงแล้ว",
+    "REVIEW_REQUIRED": "หลักฐานยังไม่พอสำหรับยืนยัน",
+    "NOT_APPLICABLE": "ชนิดความสัมพันธ์ไม่จำเป็นทางวิทยาศาสตร์",
+    "MISSING_CONTENT": "เนื้อหาที่ควรมีแต่ยังไม่มีในฐานข้อมูล"
+  },
+  "coverage_status_definitions": {
+    "COMPLETE": "วัตถุประสงค์การเรียนรู้หลักมีบทเรียนและการฝึกที่เพียงพอในขอบเขตข้อมูลปัจจุบัน",
+    "PARTIAL": "มีเนื้อหาหลักแต่ยังขาดการฝึกหรือตัวอย่างบางประเภท",
+    "MISSING": "ไม่มีเนื้อหาหลักรองรับ",
+    "NOT_APPLICABLE": "ไม่ต้องใช้ความสัมพันธ์ชนิดนั้น",
+    "REVIEW_REQUIRED": "ต้องตรวจสอบเพิ่มก่อนสรุป"
+  },
+  "counts": {
+    "confirmed_p1": 20,
+    "chemical_kinetics": 12,
+    "electrochemistry": 8
+  },
+  "items": [
+    {
+      "p1_content_id": "K-P1-021",
+      "canonical_topic_id": "K02",
+      "related_topic_ids": [
+        "K02"
+      ],
+      "related_lesson_ids": [
+        "K02"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K02",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-002",
+        "P-K-009",
+        "P-K-010",
+        "P-K-012"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หัวข้อ ดาว สูตร บทเรียน และโจทย์วัดการหากฎอัตราจากข้อมูลอัตราเริ่มต้นโดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หัวข้อ ดาว สูตร บทเรียน และโจทย์วัดการหากฎอัตราจากข้อมูลอัตราเริ่มต้นโดยตรง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "กฎอัตราเป็นสมการหลักของวิธี initial rates"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ใช้ initial-rate data เพื่อหาอันดับและ k"
+          },
+          {
+            "target_id": "P-K-009",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-021 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-010",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-021 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-012",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-021 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "หัวข้อ ดาว สูตร บทเรียน และโจทย์วัดการหากฎอัตราจากข้อมูลอัตราเริ่มต้นโดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 21,
+        "printed_slide_number": 21,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-021.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-026",
+      "canonical_topic_id": "K02",
+      "related_topic_ids": [
+        "K02"
+      ],
+      "related_lesson_ids": [
+        "K02"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K02",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-002",
+        "P-K-011",
+        "P-K-012"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นแบบฝึกหัด initial rates ของ S2O8^2-/I- โดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นแบบฝึกหัด initial rates ของ S2O8^2-/I- โดยตรง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "ใช้ rate law กับระบบ S2O8^2-/I-"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์มาจากหน้าเดียวกับเครื่องหมายดาว"
+          },
+          {
+            "target_id": "P-K-011",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-026 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-012",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-026 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "เป็นแบบฝึกหัด initial rates ของ S2O8^2-/I- โดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 26,
+        "printed_slide_number": 25,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-026.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-035",
+      "canonical_topic_id": "K03",
+      "related_topic_ids": [
+        "K03"
+      ],
+      "related_lesson_ids": [
+        "K03"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K03",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-003",
+        "P-K-013",
+        "P-K-015"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เนื้อหาเป็นการอินทิเกรตกฎอัตราอันดับหนึ่ง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เนื้อหาเป็นการอินทิเกรตกฎอัตราอันดับหนึ่ง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-004",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สมการ integrated first-order rate law"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-003",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณความเข้มข้นด้วย first-order integrated law"
+          },
+          {
+            "target_id": "P-K-013",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-035 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-015",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-035 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "เนื้อหาเป็นการอินทิเกรตกฎอัตราอันดับหนึ่ง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 35,
+        "printed_slide_number": 34,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-035.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-040",
+      "canonical_topic_id": "K04",
+      "related_topic_ids": [
+        "K04",
+        "K03"
+      ],
+      "related_lesson_ids": [
+        "K04",
+        "K03"
+      ],
+      "related_formula_ids": [
+        "F-K-007",
+        "F-K-004"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K04",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-004",
+        "P-K-018",
+        "P-K-019",
+        "P-K-020"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K04",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เครื่องหมายดาวครอบคลุมกราฟ first-order และสมบัติครึ่งชีวิต"
+          },
+          {
+            "target_id": "K03",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "เครื่องหมายดาวครอบคลุมกราฟ first-order และสมบัติครึ่งชีวิต"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K04",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เครื่องหมายดาวครอบคลุมกราฟ first-order และสมบัติครึ่งชีวิต"
+          },
+          {
+            "target_id": "K03",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "เครื่องหมายดาวครอบคลุมกราฟ first-order และสมบัติครึ่งชีวิต"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-007",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สมการครึ่งชีวิตอันดับหนึ่ง"
+          },
+          {
+            "target_id": "F-K-004",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "กราฟ first-order มาจาก integrated rate law"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-004",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์คำนวณครึ่งชีวิตอันดับหนึ่ง"
+          },
+          {
+            "target_id": "P-K-018",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-040 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-019",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-040 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-020",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-040 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "เครื่องหมายดาวครอบคลุมกราฟ first-order และสมบัติครึ่งชีวิต",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 40,
+        "printed_slide_number": 39,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-040.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-042",
+      "canonical_topic_id": "K03",
+      "related_topic_ids": [
+        "K03"
+      ],
+      "related_lesson_ids": [
+        "K03"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K03",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-003",
+        "P-K-015"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "ตัวอย่าง N2O5 ใช้ integrated first-order equation โดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "ตัวอย่าง N2O5 ใช้ integrated first-order equation โดยตรง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-004",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "N2O5 ถูกแก้ด้วย first-order integrated law"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-003",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ N2O5 อ้างอิงหน้าดาวและหน้าคำตอบต่อเนื่อง"
+          },
+          {
+            "target_id": "P-K-015",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-042 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "ตัวอย่าง N2O5 ใช้ integrated first-order equation โดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 42,
+        "printed_slide_number": 41,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-042.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-049",
+      "canonical_topic_id": "K03",
+      "related_topic_ids": [
+        "K03"
+      ],
+      "related_lesson_ids": [
+        "K03"
+      ],
+      "related_formula_ids": [
+        "F-K-005"
+      ],
+      "related_worked_examples": [],
+      "related_problem_ids": [
+        "P-K-016",
+        "P-K-017"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "มีสูตรและคำอธิบายอันดับสอง แต่ตัวอย่างฝังในบทเรียนและคลังโจทย์ปัจจุบันเน้นอันดับหนึ่ง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "มีสูตรและคำอธิบายอันดับสอง แต่ตัวอย่างฝังในบทเรียนและคลังโจทย์ปัจจุบันเน้นอันดับหนึ่ง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-005",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สมการ integrated second-order rate law"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-016",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-049 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-017",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-049 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "MISSING_CONTENT",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "มีสูตรและคำอธิบายอันดับสอง แต่ตัวอย่างฝังในบทเรียนและคลังโจทย์ปัจจุบันเน้นอันดับหนึ่ง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 49,
+        "printed_slide_number": 48,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-049.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-061",
+      "canonical_topic_id": "K05",
+      "related_topic_ids": [
+        "K05"
+      ],
+      "related_lesson_ids": [
+        "K05"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K05",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-021",
+        "P-K-022",
+        "P-K-023",
+        "P-K-024"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K05",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนมีตัวอย่างอ่าน Ea และ ΔH จากกราฟ แต่ยังไม่มีโจทย์ในคลัง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K05",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนมีตัวอย่างอ่าน Ea และ ΔH จากกราฟ แต่ยังไม่มีโจทย์ในคลัง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-009",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "Ea ใน Arrhenius เชื่อมกับ activation barrier ใน reaction coordinate"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-021",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-061 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-022",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-061 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-023",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-061 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-024",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-061 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "บทเรียนมีตัวอย่างอ่าน Ea และ ΔH จากกราฟ แต่ยังไม่มีโจทย์ในคลัง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 61,
+        "printed_slide_number": 60,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-061.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-074",
+      "canonical_topic_id": "K07",
+      "related_topic_ids": [
+        "K07"
+      ],
+      "related_lesson_ids": [
+        "K07"
+      ],
+      "related_formula_ids": [],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K07",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-028",
+        "P-K-030"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "intermediate เป็นแนวคิดกลไกปฏิกิริยาและไม่จำเป็นต้องมีสูตรเฉพาะ"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "intermediate เป็นแนวคิดกลไกปฏิกิริยาและไม่จำเป็นต้องมีสูตรเฉพาะ"
+          }
+        ],
+        "formulas": [],
+        "problems": [
+          {
+            "target_id": "P-K-028",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-074 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-030",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-074 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "NOT_APPLICABLE",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "intermediate เป็นแนวคิดกลไกปฏิกิริยาและไม่จำเป็นต้องมีสูตรเฉพาะ",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 74,
+        "printed_slide_number": 73,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-074.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-077",
+      "canonical_topic_id": "K07",
+      "related_topic_ids": [
+        "K07"
+      ],
+      "related_lesson_ids": [
+        "K07"
+      ],
+      "related_formula_ids": [],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K07",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-029",
+        "P-K-030"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนอธิบาย RDS และการตัด intermediate ผ่านกลไก H2O2/I- โดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนอธิบาย RDS และการตัด intermediate ผ่านกลไก H2O2/I- โดยตรง"
+          }
+        ],
+        "formulas": [],
+        "problems": [
+          {
+            "target_id": "P-K-029",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-077 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-030",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-077 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "NOT_APPLICABLE",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "บทเรียนอธิบาย RDS และการตัด intermediate ผ่านกลไก H2O2/I- โดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 77,
+        "printed_slide_number": 76,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-077.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-091",
+      "canonical_topic_id": "K06",
+      "related_topic_ids": [
+        "K06",
+        "K05"
+      ],
+      "related_lesson_ids": [
+        "K06",
+        "K05"
+      ],
+      "related_formula_ids": [
+        "F-K-009",
+        "F-K-010"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K06",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-005",
+        "P-K-025",
+        "P-K-026",
+        "P-K-027"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K06",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวเน้นผลอุณหภูมิต่อ k ซึ่งเป็นวัตถุประสงค์ของ Arrhenius"
+          },
+          {
+            "target_id": "K05",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวเน้นผลอุณหภูมิต่อ k ซึ่งเป็นวัตถุประสงค์ของ Arrhenius"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K06",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวเน้นผลอุณหภูมิต่อ k ซึ่งเป็นวัตถุประสงค์ของ Arrhenius"
+          },
+          {
+            "target_id": "K05",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวเน้นผลอุณหภูมิต่อ k ซึ่งเป็นวัตถุประสงค์ของ Arrhenius"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-009",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "Arrhenius อธิบายการขึ้นกับอุณหภูมิของ k"
+          },
+          {
+            "target_id": "F-K-010",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สมการสองอุณหภูมิใช้เปรียบเทียบ k"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-005",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์แนวคิดตรวจการตีความผลอุณหภูมิต่อ k"
+          },
+          {
+            "target_id": "P-K-025",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-091 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-026",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-091 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-027",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-091 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "หน้าดาวเน้นผลอุณหภูมิต่อ k ซึ่งเป็นวัตถุประสงค์ของ Arrhenius",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 91,
+        "printed_slide_number": 90,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-091.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-094",
+      "canonical_topic_id": "K01",
+      "related_topic_ids": [
+        "K01"
+      ],
+      "related_lesson_ids": [
+        "K01"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K01",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-001",
+        "P-K-006",
+        "P-K-007",
+        "P-K-008"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K01",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สูตรและโจทย์ใช้สัมประสิทธิ์สโตอิชิโอเมทรีโดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K01",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สูตรและโจทย์ใช้สัมประสิทธิ์สโตอิชิโอเมทรีโดยตรง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-K-001",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เชื่อมอัตราด้วยสัมประสิทธิ์สโตอิชิโอเมทรี"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-K-001",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์มาจากหน้าดาวเดียวกัน"
+          },
+          {
+            "target_id": "P-K-006",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-094 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-007",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-094 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-008",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-094 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "สูตรและโจทย์ใช้สัมประสิทธิ์สโตอิชิโอเมทรีโดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 94,
+        "printed_slide_number": 93,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-094.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "K-P1-162",
+      "canonical_topic_id": "K08",
+      "related_topic_ids": [
+        "K08"
+      ],
+      "related_lesson_ids": [
+        "K08"
+      ],
+      "related_formula_ids": [],
+      "related_worked_examples": [
+        {
+          "lesson_id": "K08",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-K-031",
+        "P-K-032"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "K08",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "collision/encounter เป็นแนวคิดเชิงภาพ จึงไม่ต้องมีสูตรเฉพาะ แต่ยังไม่มี retrieval-practice item"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "K08",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "collision/encounter เป็นแนวคิดเชิงภาพ จึงไม่ต้องมีสูตรเฉพาะ แต่ยังไม่มี retrieval-practice item"
+          }
+        ],
+        "formulas": [],
+        "problems": [
+          {
+            "target_id": "P-K-031",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-162 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-K-032",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ K-P1-162 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "NOT_APPLICABLE",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "collision/encounter เป็นแนวคิดเชิงภาพ จึงไม่ต้องมีสูตรเฉพาะ แต่ยังไม่มี retrieval-practice item",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+        "pdf_page": 162,
+        "printed_slide_number": 161,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part1_pdf-page-162.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-013",
+      "canonical_topic_id": "E03",
+      "related_topic_ids": [
+        "E03"
+      ],
+      "related_lesson_ids": [
+        "E03"
+      ],
+      "related_formula_ids": [
+        "F-E-001",
+        "F-E-002"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E03",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-001",
+        "P-E-009",
+        "P-E-010",
+        "P-E-011",
+        "P-E-012"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "มีบทเรียน สูตร และโจทย์คำนวณรองรับบางส่วน แต่ขาดโจทย์แนวคิดเรื่องสัญลักษณ์และหน่วยครบชุด"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "มีบทเรียน สูตร และโจทย์คำนวณรองรับบางส่วน แต่ขาดโจทย์แนวคิดเรื่องสัญลักษณ์และหน่วยครบชุด"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-001",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "นิยาม conductance และหน่วยเป็นส่วนหนึ่งของศัพท์ไฟฟ้า"
+          },
+          {
+            "target_id": "F-E-002",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "molar conductivity และหน่วยเป็นศัพท์หลักในบท"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-001",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ใช้ conductivity และ molar conductivity แต่ไม่ได้ทดสอบศัพท์ทั้งหมด"
+          },
+          {
+            "target_id": "P-E-009",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-013 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-010",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-013 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-011",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-013 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-012",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-013 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "มีบทเรียน สูตร และโจทย์คำนวณรองรับบางส่วน แต่ขาดโจทย์แนวคิดเรื่องสัญลักษณ์และหน่วยครบชุด",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 13,
+        "printed_slide_number": 13,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-013.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-018",
+      "canonical_topic_id": "E02",
+      "related_topic_ids": [
+        "E02"
+      ],
+      "related_lesson_ids": [
+        "E02"
+      ],
+      "related_formula_ids": [],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E02",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-007",
+        "P-E-008"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนบันทึกแนวโน้ม dielectric constant กับอุณหภูมิ; ปัจจุบันไม่มีสูตรหรือโจทย์เฉพาะ"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E02",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนบันทึกแนวโน้ม dielectric constant กับอุณหภูมิ; ปัจจุบันไม่มีสูตรหรือโจทย์เฉพาะ"
+          }
+        ],
+        "formulas": [],
+        "problems": [
+          {
+            "target_id": "P-E-007",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-018 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-008",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-018 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "NOT_APPLICABLE",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "บทเรียนบันทึกแนวโน้ม dielectric constant กับอุณหภูมิ; ปัจจุบันไม่มีสูตรหรือโจทย์เฉพาะ",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 18,
+        "printed_slide_number": 18,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-018.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-048",
+      "canonical_topic_id": "E04",
+      "related_topic_ids": [
+        "E04",
+        "E03"
+      ],
+      "related_lesson_ids": [
+        "E04",
+        "E03"
+      ],
+      "related_formula_ids": [
+        "F-E-002",
+        "F-E-003",
+        "F-E-004"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E04",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-001",
+        "P-E-011",
+        "P-E-014",
+        "P-E-015",
+        "P-E-016",
+        "P-E-017"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E04",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นโจทย์หลายขั้นที่เชื่อม conductivity, Λm, α และ Ka โดยตรง"
+          },
+          {
+            "target_id": "E03",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นโจทย์หลายขั้นที่เชื่อม conductivity, Λm, α และ Ka โดยตรง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E04",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นโจทย์หลายขั้นที่เชื่อม conductivity, Λm, α และ Ka โดยตรง"
+          },
+          {
+            "target_id": "E03",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "เป็นโจทย์หลายขั้นที่เชื่อม conductivity, Λm, α และ Ka โดยตรง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ molar conductivity จาก conductivity"
+          },
+          {
+            "target_id": "F-E-003",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ degree of dissociation"
+          },
+          {
+            "target_id": "F-E-004",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ Ka ของ weak electrolyte"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-001",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์อ้างอิงหน้าดาวและทำครบ Λm, α, Ka"
+          },
+          {
+            "target_id": "P-E-011",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-048 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-014",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-048 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-015",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-048 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-016",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-048 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-017",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-048 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "เป็นโจทย์หลายขั้นที่เชื่อม conductivity, Λm, α และ Ka โดยตรง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 48,
+        "printed_slide_number": 48,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-048.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-066",
+      "canonical_topic_id": "E03",
+      "related_topic_ids": [
+        "E03"
+      ],
+      "related_lesson_ids": [
+        "E03"
+      ],
+      "related_formula_ids": [
+        "F-E-005"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E03",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-002",
+        "P-E-013"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ผ่านการตรวจเลขคณิตและเก็บคำเตือนต้นฉบับโดยไม่แก้ PDF"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E03",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ผ่านการตรวจเลขคณิตและเก็บคำเตือนต้นฉบับโดยไม่แก้ PDF"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-005",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "ใช้ Kohlrausch law หา Λ° ของ AgBr"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-002",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ AgBr อ้างอิงหน้าดาวและใช้ค่าที่แก้เลขคณิตแล้ว"
+          },
+          {
+            "target_id": "P-E-013",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-066 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "โจทย์ผ่านการตรวจเลขคณิตและเก็บคำเตือนต้นฉบับโดยไม่แก้ PDF",
+      "source_correction_note_th": "ต้นฉบับลบ 6.99×10^-8 - 1.60×10^-8 ผิดเป็น 7.39×10^-8; เนื้อหาที่ผ่านการตรวจใช้ 5.39×10^-8 S cm^-1, S=4.44×10^-7 M และ Ksp=1.97×10^-13",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 66,
+        "printed_slide_number": 66,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-066.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-083",
+      "canonical_topic_id": "E06",
+      "related_topic_ids": [
+        "E06"
+      ],
+      "related_lesson_ids": [
+        "E06"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E06",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-003",
+        "P-E-018",
+        "P-E-019",
+        "P-E-020",
+        "P-E-021",
+        "P-E-022"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E06",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สูตรและโจทย์ตรงกับตัวอย่าง CuSO4 บนหน้าดาว"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E06",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "สูตรและโจทย์ตรงกับตัวอย่าง CuSO4 บนหน้าดาว"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-006",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ ionic strength ของ CuSO4"
+          },
+          {
+            "target_id": "F-E-007",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ mean activity coefficient ด้วย DHLL"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-003",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์ CuSO4 ใช้ I และ Debye-Hückel ตามหน้าดาว"
+          },
+          {
+            "target_id": "P-E-018",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-083 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-019",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-083 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-020",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-083 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-021",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-083 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-022",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-083 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "สูตรและโจทย์ตรงกับตัวอย่าง CuSO4 บนหน้าดาว",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 83,
+        "printed_slide_number": 83,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-083.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-089",
+      "canonical_topic_id": "E07",
+      "related_topic_ids": [
+        "E07",
+        "E06"
+      ],
+      "related_lesson_ids": [
+        "E07",
+        "E06"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E07",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-023",
+        "P-E-024",
+        "P-E-025"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียน salting-in/out ใช้พื้นฐาน ionic strength และ activity; ไม่มีสูตรเฉพาะหรือโจทย์ในคลัง"
+          },
+          {
+            "target_id": "E06",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียน salting-in/out ใช้พื้นฐาน ionic strength และ activity; ไม่มีสูตรเฉพาะหรือโจทย์ในคลัง"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E07",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียน salting-in/out ใช้พื้นฐาน ionic strength และ activity; ไม่มีสูตรเฉพาะหรือโจทย์ในคลัง"
+          },
+          {
+            "target_id": "E06",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียน salting-in/out ใช้พื้นฐาน ionic strength และ activity; ไม่มีสูตรเฉพาะหรือโจทย์ในคลัง"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-006",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "ionic strength เป็นแกนของการอธิบาย salting effect"
+          },
+          {
+            "target_id": "F-E-007",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "DHLL รองรับพฤติกรรมช่วง ionic strength ต่ำ"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-023",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-089 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-024",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-089 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-025",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-089 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "บทเรียน salting-in/out ใช้พื้นฐาน ionic strength และ activity; ไม่มีสูตรเฉพาะหรือโจทย์ในคลัง",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 89,
+        "printed_slide_number": 89,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-089.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-095",
+      "canonical_topic_id": "E09",
+      "related_topic_ids": [
+        "E09"
+      ],
+      "related_lesson_ids": [
+        "E09"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E09",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-004",
+        "P-E-026",
+        "P-E-027",
+        "P-E-028"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E09",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนครอบคลุม galvanic cell และ cell notation; คลังโจทย์ปัจจุบันทดสอบ Ecell มากกว่า notation"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E09",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "บทเรียนครอบคลุม galvanic cell และ cell notation; คลังโจทย์ปัจจุบันทดสอบ Ecell มากกว่า notation"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-009",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "cell potential ใช้ศักย์รีดักชันของ cathode และ anode"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-004",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "โจทย์คำนวณ Ecell แต่ไม่ครอบคลุม cell notation ทั้งหมด"
+          },
+          {
+            "target_id": "P-E-026",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-095 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-027",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-095 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-028",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-095 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "บทเรียนครอบคลุม galvanic cell และ cell notation; คลังโจทย์ปัจจุบันทดสอบ Ecell มากกว่า notation",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 95,
+        "printed_slide_number": 95,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-095.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    },
+    {
+      "p1_content_id": "E-P1-108",
+      "canonical_topic_id": "E09",
+      "related_topic_ids": [
+        "E09",
+        "E10"
+      ],
+      "related_lesson_ids": [
+        "E09",
+        "E10"
+      ],
+      "related_formula_ids": [
+        "F-E-009",
+        "F-E-010",
+        "F-E-012"
+      ],
+      "related_worked_examples": [
+        {
+          "lesson_id": "E09",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "lesson_id": "E10",
+          "field": "worked_example",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "related_problem_ids": [
+        "P-E-004",
+        "P-E-005",
+        "P-E-006",
+        "P-E-028",
+        "P-E-029",
+        "P-E-030",
+        "P-E-031",
+        "P-E-032",
+        "P-E-033"
+      ],
+      "mapping_confidence": "HIGH",
+      "coverage_status": "COMPLETE",
+      "gap_classification": [],
+      "relationship_details": {
+        "topics": [
+          {
+            "target_id": "E09",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวถามต่อเนื่อง Ecell, ΔG° และ K และมีโจทย์แยกตรวจครบทุกวัตถุประสงค์"
+          },
+          {
+            "target_id": "E10",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวถามต่อเนื่อง Ecell, ΔG° และ K และมีโจทย์แยกตรวจครบทุกวัตถุประสงค์"
+          }
+        ],
+        "lessons": [
+          {
+            "target_id": "E09",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวถามต่อเนื่อง Ecell, ΔG° และ K และมีโจทย์แยกตรวจครบทุกวัตถุประสงค์"
+          },
+          {
+            "target_id": "E10",
+            "relationship_type": "SUPPORTING",
+            "verification_status": "VERIFIED",
+            "reason_th": "หน้าดาวถามต่อเนื่อง Ecell, ΔG° และ K และมีโจทย์แยกตรวจครบทุกวัตถุประสงค์"
+          }
+        ],
+        "formulas": [
+          {
+            "target_id": "F-E-009",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ Ecell จาก reduction potentials"
+          },
+          {
+            "target_id": "F-E-010",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เชื่อม E° กับ ΔG°"
+          },
+          {
+            "target_id": "F-E-012",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "เชื่อม E° กับ equilibrium constant"
+          }
+        ],
+        "problems": [
+          {
+            "target_id": "P-E-004",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ Ecell"
+          },
+          {
+            "target_id": "P-E-005",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ ΔG°"
+          },
+          {
+            "target_id": "P-E-006",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำนวณ K"
+          },
+          {
+            "target_id": "P-E-028",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-029",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-030",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-031",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-032",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          },
+          {
+            "target_id": "P-E-033",
+            "relationship_type": "DIRECT",
+            "verification_status": "VERIFIED",
+            "reason_th": "คำถาม Phase 7B วัด learning objective ของ E-P1-108 โดยตรงและผ่าน chemistry validation"
+          }
+        ]
+      },
+      "relationship_status": {
+        "topic": "VERIFIED",
+        "lesson": "VERIFIED",
+        "formula": "VERIFIED",
+        "worked_example": "VERIFIED",
+        "practice_problem": "VERIFIED"
+      },
+      "mapping_reason_th": "หน้าดาวถามต่อเนื่อง Ecell, ΔG° และ K และมีโจทย์แยกตรวจครบทุกวัตถุประสงค์",
+      "source_evidence": {
+        "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+        "pdf_page": 108,
+        "printed_slide_number": 108,
+        "evidence_path": "evidence/stars/PhCh-SC202301_Physical_Chemistry_Part2_pdf-page-108.jpg",
+        "evidence_classification": "CONFIRMED"
+      }
+    }
+  ],
+  "phase_7b_update": {
+    "new_questions_linked": 54,
+    "p1_records_with_direct_new_practice": 20,
+    "remaining_practice_gaps": 0
+  }
+}

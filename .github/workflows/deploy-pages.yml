@@ -1,0 +1,63 @@
+name: Deploy study hub to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - name: Install locked dependencies
+        working-directory: web
+        run: pnpm install --frozen-lockfile
+      - name: Run unit and integrity tests
+        working-directory: web
+        run: pnpm test
+      - name: Build for GitHub Pages
+        working-directory: web
+        run: pnpm build --mode github-pages
+      - name: Validate protected educational data
+        run: |
+          python tests/validate_project.py
+          python tests/validate_phase7a.py
+          python tests/validate_phase7b.py
+          python tests/validate_phase7c.py
+          python tests/validate_phase7d.py
+          python tests/validate_phase7e.py
+      - name: Add SPA fallback
+        shell: bash
+        run: cp web/dist/index.html web/dist/404.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

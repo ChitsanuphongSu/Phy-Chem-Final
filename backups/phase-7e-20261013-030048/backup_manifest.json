@@ -1,0 +1,87 @@
+{
+  "phase": "7E",
+  "created_at_utc": "2026-10-12T20:00:48.507883+00:00",
+  "backup_directory": "backups/phase-7e-20261013-030048",
+  "files": [
+    {
+      "original_file_path": "web/package.json",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/package.json",
+      "sha256": "f96d9891fbd194fae654dea4598b218c3f48fc9a29509c56909514301e267cf4",
+      "file_size_bytes": 875,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/pnpm-lock.yaml",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/pnpm-lock.yaml",
+      "sha256": "bb51cd5d8e36e5a240686bfd832b1839a7ea03ccc0c2ad7dd8827caf2e119ab4",
+      "file_size_bytes": 49197,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/vite.config.ts",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/vite.config.ts",
+      "sha256": "d9c6dfe0bca9e50ccc1580feab0763a2aea81bdc743db8f16e9ef0100cce7304",
+      "file_size_bytes": 191,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/index.html",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/index.html",
+      "sha256": "94fc119bf14faf0894a5c8895de35909c28c90e76353a62bd70bbec5d811d916",
+      "file_size_bytes": 317,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/App.tsx",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/src/App.tsx",
+      "sha256": "e8da3b56e911d9cd3d419d670e23d2a94cab14d36e2fb99a42552bd371abb5b7",
+      "file_size_bytes": 24439,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/Phase7C.tsx",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/src/Phase7C.tsx",
+      "sha256": "1ceeb45225fd9c748508c07aa284f4a51c72d3847493d48b682449202dfcf55d",
+      "file_size_bytes": 13873,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/ProgressPortability.tsx",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/src/ProgressPortability.tsx",
+      "sha256": "84db9557de06b77cab964e0944bb6f8a7ddd50de0ada580363de3d42576c8ff3",
+      "file_size_bytes": 3646,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/styles.css",
+      "backup_file_path": "backups/phase-7e-20261013-030048/web/src/styles.css",
+      "sha256": "e40b1db6fe401c13a27a8f19e7d1661417054df0b263961bcd740ad6d19ec895",
+      "file_size_bytes": 10237,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "README.md",
+      "backup_file_path": "backups/phase-7e-20261013-030048/README.md",
+      "sha256": "1fdfc806707d416d23b089f5b80cae2d913f84a67a34eed5bb14f8240e321cda",
+      "file_size_bytes": 4300,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "PROJECT_REPORT.md",
+      "backup_file_path": "backups/phase-7e-20261013-030048/PROJECT_REPORT.md",
+      "sha256": "7c7cf85cbc0f0b9ab76ba458a89e44db36d8803701e69dffcbba5ffa2fba2407",
+      "file_size_bytes": 8361,
+      "backup_creation_timestamp": "2026-10-12T20:00:48.507883+00:00",
+      "backup_verified": true
+    }
+  ]
+}

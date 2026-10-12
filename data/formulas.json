@@ -1,0 +1,584 @@
+{
+  "schema_version": 2,
+  "validation_status": "reviewed",
+  "formulas": [
+    {
+      "id": "F-K-001",
+      "topic_id": "K01",
+      "title_th": "อัตราปฏิกิริยาตามสโตอิชิโอเมทรี",
+      "latex": "v=-\\frac{1}{a}\\frac{d[A]}{dt}=\\frac{1}{p}\\frac{d[P]}{dt}",
+      "variables": {
+        "a,p": "สัมประสิทธิ์สโตอิชิโอเมทรี",
+        "[A],[P]": "ความเข้มข้น"
+      },
+      "units": "mol L^-1 s^-1",
+      "conditions": "สมการปฏิกิริยาต้องดุลแล้ว",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 10,
+          "printed_slide_number": 10
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-002",
+      "topic_id": "K02",
+      "title_th": "กฎอัตรา",
+      "latex": "v=k[A]^m[B]^n",
+      "variables": {
+        "k": "ค่าคงที่อัตรา",
+        "m,n": "อันดับย่อย"
+      },
+      "units": "หน่วย k ขึ้นกับอันดับรวม",
+      "conditions": "m,n ต้องหาเชิงทดลอง ไม่ดึงจากสมการรวมโดยอัตโนมัติ",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 19,
+          "printed_slide_number": 19
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 21,
+          "printed_slide_number": 21
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-003",
+      "topic_id": "K03",
+      "title_th": "อันดับศูนย์แบบอินทิเกรต",
+      "latex": "[A]_t=[A]_0-k_0t",
+      "variables": {
+        "[A]_0": "ความเข้มข้นเริ่มต้น",
+        "[A]_t": "ความเข้มข้นที่เวลา t"
+      },
+      "units": "k0: mol L^-1 time^-1",
+      "conditions": "อัตราไม่ขึ้นกับ [A]",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 30
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-004",
+      "topic_id": "K03",
+      "title_th": "อันดับหนึ่งแบบอินทิเกรต",
+      "latex": "\\ln\\frac{[A]_t}{[A]_0}=-k_1t",
+      "variables": {
+        "k1": "ค่าคงที่อัตราอันดับหนึ่ง",
+        "t": "เวลา"
+      },
+      "units": "k1: time^-1",
+      "conditions": "ปฏิกิริยาอันดับหนึ่ง",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 35,
+          "printed_slide_number": 34
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 36,
+          "printed_slide_number": 35
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-005",
+      "topic_id": "K03",
+      "title_th": "อันดับสองแบบอินทิเกรต",
+      "latex": "\\frac{1}{[A]_t}=\\frac{1}{[A]_0}+k_2t",
+      "variables": {
+        "k2": "ค่าคงที่อัตราอันดับสอง"
+      },
+      "units": "k2: L mol^-1 time^-1",
+      "conditions": "กรณี rate=k[A]^2",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 49,
+          "printed_slide_number": 48
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-006",
+      "topic_id": "K04",
+      "title_th": "ครึ่งชีวิตอันดับศูนย์",
+      "latex": "t_{1/2}=\\frac{[A]_0}{2k_0}",
+      "variables": {
+        "t1/2": "ครึ่งชีวิต"
+      },
+      "units": "time",
+      "conditions": "อันดับศูนย์",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 33,
+          "printed_slide_number": 32
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-007",
+      "topic_id": "K04",
+      "title_th": "ครึ่งชีวิตอันดับหนึ่ง",
+      "latex": "t_{1/2}=\\frac{\\ln2}{k_1}",
+      "variables": {
+        "t1/2": "ครึ่งชีวิต"
+      },
+      "units": "time",
+      "conditions": "อันดับหนึ่งและอุณหภูมิคงที่",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 39,
+          "printed_slide_number": 38
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 40,
+          "printed_slide_number": 39
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-008",
+      "topic_id": "K04",
+      "title_th": "ครึ่งชีวิตอันดับสอง",
+      "latex": "t_{1/2}=\\frac{1}{k_2[A]_0}",
+      "variables": {
+        "[A]0": "ความเข้มข้นเริ่มต้น"
+      },
+      "units": "time",
+      "conditions": "rate=k[A]^2",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 51,
+          "printed_slide_number": 50
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-009",
+      "topic_id": "K05",
+      "title_th": "สมการ Arrhenius",
+      "latex": "k=Ae^{-E_a/(RT)}",
+      "variables": {
+        "A": "pre-exponential factor",
+        "Ea": "activation energy",
+        "R": "ค่าคงที่แก๊ส",
+        "T": "อุณหภูมิสัมบูรณ์"
+      },
+      "units": "Ea: J mol^-1; T: K",
+      "conditions": "ใช้หน่วย Ea ให้สอดคล้องกับ R",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 64,
+          "printed_slide_number": 63
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-K-010",
+      "topic_id": "K06",
+      "title_th": "Arrhenius สองอุณหภูมิ",
+      "latex": "\\ln\\frac{k_2}{k_1}=-\\frac{E_a}{R}\\left(\\frac{1}{T_2}-\\frac{1}{T_1}\\right)",
+      "variables": {
+        "k1,k2": "ค่าคงที่อัตราที่ T1,T2"
+      },
+      "units": "Ea: J mol^-1",
+      "conditions": "กลไกและ A ไม่เปลี่ยนในช่วงอุณหภูมิ",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 67,
+          "printed_slide_number": 66
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 69,
+          "printed_slide_number": 68
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-001",
+      "topic_id": "E03",
+      "title_th": "Conductance",
+      "latex": "G=\\frac{1}{R}=\\kappa\\frac{A}{l}",
+      "variables": {
+        "G": "conductance",
+        "R": "resistance",
+        "κ": "conductivity",
+        "A": "พื้นที่หน้าตัด",
+        "l": "ระยะห่างขั้ว"
+      },
+      "units": "G: S; κ: S m^-1 หรือ S cm^-1",
+      "conditions": "รูปทรงเซลล์คงที่",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 31
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 34,
+          "printed_slide_number": 34
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-002",
+      "topic_id": "E03",
+      "title_th": "Molar conductivity",
+      "latex": "\\Lambda_m=\\frac{1000\\kappa}{c}",
+      "variables": {
+        "κ": "S cm^-1",
+        "c": "mol L^-1"
+      },
+      "units": "S cm^2 mol^-1",
+      "conditions": "ใช้ตัวประกอบ 1000 เมื่อ κ เป็น S cm^-1 และ c เป็น mol L^-1",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 43,
+          "printed_slide_number": 43
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-003",
+      "topic_id": "E04",
+      "title_th": "Degree of dissociation",
+      "latex": "\\alpha=\\frac{\\Lambda_m}{\\Lambda_m^\\circ}",
+      "variables": {
+        "α": "ระดับการแตกตัว",
+        "Λ°": "molar conductivity ที่ infinite dilution"
+      },
+      "units": "dimensionless",
+      "conditions": "electrolyte อ่อนและเลือก Λ° ถูกชนิด",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 46,
+          "printed_slide_number": 46
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-004",
+      "topic_id": "E04",
+      "title_th": "Ostwald dilution law",
+      "latex": "K_a=\\frac{c\\alpha^2}{1-\\alpha}",
+      "variables": {
+        "c": "ความเข้มข้นเริ่มต้น",
+        "α": "ระดับการแตกตัว"
+      },
+      "units": "หน่วยตาม standard-state convention; มักรายงานเชิงความเข้มข้น",
+      "conditions": "กรณีกรดอ่อนโมโนโปรติกและสารละลายเจือจาง",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 47,
+          "printed_slide_number": 47
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-005",
+      "topic_id": "E03",
+      "title_th": "Kohlrausch independent migration",
+      "latex": "\\Lambda_m^\\circ=\\nu_+\\lambda_+^\\circ+\\nu_-\\lambda_-^\\circ",
+      "variables": {
+        "ν": "จำนวนไอออนต่อสูตรหน่วย",
+        "λ°": "limiting ionic conductivity"
+      },
+      "units": "S cm^2 mol^-1",
+      "conditions": "infinite dilution",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 41,
+          "printed_slide_number": 41
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 66,
+          "printed_slide_number": 66
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-006",
+      "topic_id": "E06",
+      "title_th": "Ionic strength",
+      "latex": "I=\\frac12\\sum_i c_i z_i^2",
+      "variables": {
+        "ci": "ความเข้มข้นไอออน i",
+        "zi": "ประจุไอออน"
+      },
+      "units": "mol L^-1 เมื่อใช้ molarity",
+      "conditions": "รวมไอออนทุกชนิดในสารละลาย",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 82,
+          "printed_slide_number": 82
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-007",
+      "topic_id": "E06",
+      "title_th": "Debye-Huckel limiting law",
+      "latex": "\\log_{10}\\gamma_{\\pm}=-A|z_+z_-|\\sqrt{I}",
+      "variables": {
+        "γ±": "mean ionic activity coefficient",
+        "A": "0.509 สำหรับน้ำที่ 298 K"
+      },
+      "units": "dimensionless",
+      "conditions": "สารละลายเจือจางมาก; ที่ 298 K ในน้ำ",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 85,
+          "printed_slide_number": 85
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-008",
+      "topic_id": "E06",
+      "title_th": "Mean ionic activity",
+      "latex": "a_{\\pm}=\\gamma_{\\pm}m_{\\pm}",
+      "variables": {
+        "a±": "mean activity",
+        "m±": "mean molality"
+      },
+      "units": "dimensionless เมื่ออ้าง standard state",
+      "conditions": "ระบุ concentration scale ให้ชัด",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 69,
+          "printed_slide_number": 69
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 71,
+          "printed_slide_number": 71
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-009",
+      "topic_id": "E09",
+      "title_th": "ศักย์เซลล์จาก reduction potentials",
+      "latex": "E_{cell}=E_{cathode}-E_{anode}",
+      "variables": {
+        "E": "reduction potential"
+      },
+      "units": "V",
+      "conditions": "ใช้ศักย์รีดักชันทั้งคู่ก่อนลบ",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 106,
+          "printed_slide_number": 106
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "priority": "P1",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-010",
+      "topic_id": "E10",
+      "title_th": "พลังงานกิบส์กับศักย์เซลล์",
+      "latex": "\\Delta G=-nFE_{cell}",
+      "variables": {
+        "n": "จำนวนอิเล็กตรอน",
+        "F": "96485 C mol^-1"
+      },
+      "units": "J mol^-1",
+      "conditions": "Ecell สำหรับปฏิกิริยาที่เขียน",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 109,
+          "printed_slide_number": 109
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-011",
+      "topic_id": "E10",
+      "title_th": "Nernst equation ที่ 298 K",
+      "latex": "E=E^\\circ-\\frac{0.05916}{n}\\log_{10}Q",
+      "variables": {
+        "Q": "reaction quotient",
+        "n": "อิเล็กตรอน"
+      },
+      "units": "V",
+      "conditions": "298.15 K; ใช้ activities ใน Q",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 114,
+          "printed_slide_number": 114
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-012",
+      "topic_id": "E10",
+      "title_th": "ศักย์มาตรฐานกับสมดุล",
+      "latex": "\\log_{10}K=\\frac{nE^\\circ}{0.05916}",
+      "variables": {
+        "K": "equilibrium constant"
+      },
+      "units": "dimensionless",
+      "conditions": "298.15 K",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 116,
+          "printed_slide_number": 116
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    },
+    {
+      "id": "F-E-013",
+      "topic_id": "E11",
+      "title_th": "Concentration cell",
+      "latex": "E_{cell}=\\frac{0.05916}{n}\\log_{10}\\frac{a_{high}}{a_{low}}",
+      "variables": {
+        "a": "activity ของชนิดเดียวกัน"
+      },
+      "units": "V",
+      "conditions": "298.15 K และ electrode reversible ต่อชนิดเดียวกัน",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 129,
+          "printed_slide_number": 129
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 132,
+          "printed_slide_number": 132
+        }
+      ],
+      "priority": "P3",
+      "validation": "VALIDATED",
+      "note": ""
+    }
+  ]
+}

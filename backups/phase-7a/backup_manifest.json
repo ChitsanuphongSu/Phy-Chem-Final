@@ -1,0 +1,64 @@
+{
+  "phase": "7A",
+  "created_at_utc": "2026-10-12T10:39:56.212652+00:00",
+  "backup_directory": "backups/phase-7a",
+  "files": [
+    {
+      "original_file_path": "data/exam_priority.json",
+      "backup_file_path": "backups/phase-7a/data/exam_priority.json",
+      "sha256": "aa012056441d6b63d749e968956fa9d3606fd84659eb71395e6c76b7f2026b76",
+      "file_size_bytes": 14843,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "data/formulas.json",
+      "backup_file_path": "backups/phase-7a/data/formulas.json",
+      "sha256": "a984eb263683c4e2b2aeadc739a0f33a4319dd3457bf2b0dfebf7d9fbac190e8",
+      "file_size_bytes": 19151,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "data/problems.json",
+      "backup_file_path": "backups/phase-7a/data/problems.json",
+      "sha256": "3d89575fb5f07c04f8ef6a936a5075e83c2fd1a4a958bc6979d5986f0da77cb4",
+      "file_size_bytes": 12192,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "data/topics.json",
+      "backup_file_path": "backups/phase-7a/data/topics.json",
+      "sha256": "e331cf2db49785e6a0627a6a34908da7c5d5e69e5ba90fc41b89018421239363",
+      "file_size_bytes": 30283,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "README.md",
+      "backup_file_path": "backups/phase-7a/README.md",
+      "sha256": "47529ae970f6318059f43cb09640af9e2f54203fa0c2f4bc350fa0571fc283cc",
+      "file_size_bytes": 1675,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "PROJECT_REPORT.md",
+      "backup_file_path": "backups/phase-7a/PROJECT_REPORT.md",
+      "sha256": "e2f232e6e895bdd5e5662f24b9c032b838ff7604d1ab3eea84f8ea9eb8c92581",
+      "file_size_bytes": 3817,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "tests/validate_project.py",
+      "backup_file_path": "backups/phase-7a/tests/validate_project.py",
+      "sha256": "cb3a618e79f93c2fd109e1cf7b5a516f9e5a69547eb64bfe4fc1e7d6524e6c3c",
+      "file_size_bytes": 1361,
+      "backup_verified": true
+    },
+    {
+      "original_file_path": "web/src/data/formulas.json",
+      "backup_file_path": "backups/phase-7a/web/src/data/formulas.json",
+      "sha256": "a984eb263683c4e2b2aeadc739a0f33a4319dd3457bf2b0dfebf7d9fbac190e8",
+      "file_size_bytes": 19151,
+      "backup_creation_timestamp": "2026-10-12T10:44:19.516318+00:00",
+      "backup_verified": true
+    }
+  ]
+}

@@ -1,0 +1,3701 @@
+{
+  "schema_version": "2.0.0",
+  "problems": [
+    {
+      "id": "P-K-001",
+      "topic_id": "K01",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "สำหรับ 4NH3+3O2→2N2+6H2O ถ้า N2 เกิด 0.27 mol L^-1 s^-1 จงหาอัตราการเกิด H2O",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "correct_answer": 0.81,
+      "tolerance": 0.01,
+      "unit": "mol L^-1 s^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Given: d[N2]/dt=0.27",
+        "Find: d[H2O]/dt",
+        "Formula: (1/2)d[N2]/dt=(1/6)d[H2O]/dt",
+        "Substitute: 6/2×0.27",
+        "Answer: 0.81 mol L^-1 s^-1",
+        "Unit verified"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-002",
+      "topic_id": "K02",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยา S2O8^2- กับ I- มี rate=2.2×10^-4 M s^-1 ที่ [S2O8^2-]=0.080 M และ [I-]=0.034 M จงหา k เมื่อเป็นอันดับหนึ่งต่อสารทั้งคู่",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 26,
+          "printed_slide_number": 25
+        }
+      ],
+      "correct_answer": 0.0809,
+      "tolerance": 0.001,
+      "unit": "M^-1 s^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Given concentrations and rate",
+        "Use k=rate/([S2O8][I])",
+        "Substitute 2.2e-4/(0.080×0.034)",
+        "Answer 8.09e-2 M^-1 s^-1",
+        "Dimensional check: M s^-1 / M^2"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-003",
+      "topic_id": "K03",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "N2O5 เป็น first order, k=5.1×10^-4 s^-1, [A]0=0.25 M หลัง 3.2 min เหลือเท่าใด",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 42,
+          "printed_slide_number": 41
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 43,
+          "printed_slide_number": 42
+        }
+      ],
+      "correct_answer": 0.227,
+      "tolerance": 0.003,
+      "unit": "M",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Convert 3.2 min=192 s",
+        "Use [A]=[A]0e^-kt",
+        "Substitute 0.25e^(-5.1e-4×192)",
+        "Answer 0.227 M",
+        "Unit exponent is dimensionless"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-004",
+      "topic_id": "K04",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "ปฏิกิริยาอันดับหนึ่งมี k=0.00100 s^-1 จงหาครึ่งชีวิต",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 100,
+          "printed_slide_number": 99
+        }
+      ],
+      "correct_answer": 693,
+      "tolerance": 2,
+      "unit": "s",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use t1/2=ln2/k",
+        "0.693/0.00100",
+        "Answer 693 s"
+      ],
+      "related_formula_ids": [
+        "F-K-007"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-005",
+      "topic_id": "K06",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "prompt_th": "เมื่ออุณหภูมิเพิ่มขึ้น สำหรับปฏิกิริยาทั่วไปที่กลไกไม่เปลี่ยน ค่า k โดยทั่วไปเป็นอย่างไร",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 91,
+          "printed_slide_number": 90
+        }
+      ],
+      "correct_answer": "เพิ่มขึ้น",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Arrhenius: k=Ae^-Ea/RT",
+        "T เพิ่มทำให้ exponent มีค่าน้อยลบ",
+        "k เพิ่ม"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-001",
+      "topic_id": "E04",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "สารละลาย CH3COOH 0.001028 M มี κ=4.95×10^-5 S cm^-1 และ Λ°=390.5 S cm2 mol^-1 จงหา Ka",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 1.78e-05,
+      "tolerance": 1e-06,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Λ=1000κ/c=48.15 S cm2 mol^-1",
+        "α=Λ/Λ°=0.1233",
+        "Ka=cα²/(1-α)",
+        "Answer 1.78×10^-5",
+        "α is dimensionless"
+      ],
+      "related_formula_ids": [
+        "F-E-002",
+        "F-E-003",
+        "F-E-004"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-002",
+      "topic_id": "E03",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt_th": "AgBr: Lsolution=6.99×10^-8 S cm^-1, Lwater=1.60×10^-8 S cm^-1, λ°Ag+=53.5 และ λ°Br-=68.0 S cm2 mol^-1 จงหา Ksp",
+      "source_classification": "source-derived-review",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 66,
+          "printed_slide_number": 66
+        }
+      ],
+      "correct_answer": 1.97e-13,
+      "tolerance": 1e-14,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Correct solvent blank: κ=6.99e-8-1.60e-8=5.39e-8 S cm^-1",
+        "Λ°=53.5+68.0=121.5 S cm2 mol^-1",
+        "S=1000κ/Λ°=4.44e-7 M",
+        "Ksp=S²=1.97e-13",
+        "Source handwriting shows 7.39e-8; flagged as arithmetic error"
+      ],
+      "related_formula_ids": [
+        "F-E-005"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-003",
+      "topic_id": "E06",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "0.01 M CuSO4 ที่ 298 K จงหา mean activity coefficient ด้วย DHLL (A=0.509)",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.392,
+      "tolerance": 0.005,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "I=1/2[(0.01)(2²)+(0.01)(-2)²]=0.04 M",
+        "logγ±=-0.509|2×-2|√0.04=-0.4072",
+        "γ±=10^-0.4072=0.392"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-004",
+      "topic_id": "E09",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "กำหนด E°cathode=+0.031 V และ E°anode(as reduction)=-0.320 V จงหา E°cell",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": 0.351,
+      "tolerance": 0.002,
+      "unit": "V",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use Ecell=Ecathode-Eanode",
+        "0.031-(-0.320)",
+        "Answer +0.351 V"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-005",
+      "topic_id": "E10",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "สำหรับ E°cell=0.351 V และ n=2 จงหา ΔG°",
+      "source_classification": "generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 109,
+          "printed_slide_number": 109
+        }
+      ],
+      "correct_answer": -67.7,
+      "tolerance": 0.5,
+      "unit": "kJ mol^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use ΔG°=-nFE°",
+        "Substitute -2×96485×0.351 J mol^-1",
+        "Convert to kJ",
+        "Answer -67.7 kJ mol^-1"
+      ],
+      "related_formula_ids": [
+        "F-E-010"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-006",
+      "topic_id": "E10",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt_th": "สำหรับ E°cell=0.351 V, n=2 ที่ 298 K จงหา K",
+      "source_classification": "generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 116,
+          "printed_slide_number": 116
+        }
+      ],
+      "correct_answer": 750000000000.0,
+      "tolerance": 150000000000.0,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "log10K=nE°/0.05916",
+        "=2×0.351/0.05916=11.866",
+        "K=10^11.866=7.35×10^11"
+      ],
+      "related_formula_ids": [
+        "F-E-012"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-006",
+      "topic_id": "K01",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "easy",
+      "prompt_th": "สำหรับ 2A → B ถ้า A ลดลง 0.40 M ใน 20 s จงหาอัตราปฏิกิริยา",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "correct_answer": 0.01,
+      "tolerance": 1e-05,
+      "unit": "M s^-1",
+      "hint_th": "หาอัตราการหายไปของ A ก่อน",
+      "hints": [
+        "หาอัตราการหายไปของ A ก่อน",
+        "หารด้วยสัมประสิทธิ์ 2",
+        "เริ่มจาก 0.40/20 แล้วหาร 2"
+      ],
+      "solution_steps": [
+        "1. Given: Δ[A]=0.40 M, Δt=20 s, νA=2",
+        "2. Find: หาอัตราปฏิกิริยาจากการหายไปของสารตั้งต้น",
+        "3. Formula: rate=-(1/2)Δ[A]/Δt",
+        "4. Substitute: (1/2)(0.40/20)",
+        "5. Calculate: 0.010",
+        "6. Check Units: M หารด้วย s และสัมประสิทธิ์ไม่มีหน่วย",
+        "7. Final Answer: 0.01 M s^-1",
+        "8. Common Mistake: ลืมหารด้วยสัมประสิทธิ์ 2"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "related_p1_ids": [
+        "K-P1-094"
+      ],
+      "learning_objective": "หาอัตราปฏิกิริยาจากการหายไปของสารตั้งต้น",
+      "common_mistake": "ลืมหารด้วยสัมประสิทธิ์ 2",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div",
+        "values": [
+          0.4,
+          20,
+          2
+        ]
+      }
+    },
+    {
+      "id": "P-K-007",
+      "topic_id": "K01",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "medium",
+      "prompt_th": "สำหรับ 2N2O5 → 4NO2 + O2 ความสัมพันธ์ใดถูกต้อง?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ดูเครื่องหมายของ reactant/product",
+      "hints": [
+        "ดูเครื่องหมายของ reactant/product",
+        "ใช้ 1/ν หน้าทุกอนุพันธ์",
+        "เขียน -(1/2)d[N2O5]/dt ก่อน"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: เลือกสมการอัตราที่สอดคล้องกับ stoichiometry",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — -(1/2)d[N2O5]/dt=(1/4)d[NO2]/dt=d[O2]/dt",
+        "5. Common Misconception: ใช้สัมประสิทธิ์เป็นตัวคูณแทนตัวหาร"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "related_p1_ids": [
+        "K-P1-094"
+      ],
+      "learning_objective": "เลือกสมการอัตราที่สอดคล้องกับ stoichiometry",
+      "common_mistake": "ใช้สัมประสิทธิ์เป็นตัวคูณแทนตัวหาร",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "-d[N2O5]/dt=d[NO2]/dt"
+        },
+        {
+          "id": "B",
+          "text_th": "-(1/2)d[N2O5]/dt=(1/4)d[NO2]/dt=d[O2]/dt"
+        },
+        {
+          "id": "C",
+          "text_th": "-2d[N2O5]/dt=4d[NO2]/dt"
+        },
+        {
+          "id": "D",
+          "text_th": "d[N2O5]/dt=d[O2]/dt"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "ไม่หารด้วยสัมประสิทธิ์",
+        "B": "นิยามอัตราปฏิกิริยาต้องหารด้วยสัมประสิทธิ์",
+        "C": "คูณสัมประสิทธิ์ผิดทิศ",
+        "D": "ละเลยเครื่องหมายและสัมประสิทธิ์"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-008",
+      "topic_id": "K01",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "3A + 2B → 4C ถ้า C เพิ่มจาก 0 เป็น 0.240 M ใน 30.0 s จงหาอัตราการหายไปของ B",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "correct_answer": 0.004,
+      "tolerance": 4e-06,
+      "unit": "M s^-1",
+      "hint_th": "หา d[C]/dt",
+      "hints": [
+        "หา d[C]/dt",
+        "เทียบอัตราด้วย 2/4",
+        "คำนวณ 0.240/30.0 แล้วคูณ 1/2"
+      ],
+      "solution_steps": [
+        "1. Given: Δ[C]=0.240 M, Δt=30.0 s, νB=2, νC=4",
+        "2. Find: แปลงอัตราการเกิดผลิตภัณฑ์เป็นอัตราการหายไปของสารตั้งต้น",
+        "3. Formula: -d[B]/dt=(2/4)d[C]/dt",
+        "4. Substitute: (2/4)(0.240/30.0)",
+        "5. Calculate: 0.00400",
+        "6. Check Units: สัมประสิทธิ์ไม่มีหน่วย จึงเหลือ M s^-1",
+        "7. Final Answer: 0.004 M s^-1",
+        "8. Common Mistake: สลับอัตราส่วนเป็น 4/2"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "related_p1_ids": [
+        "K-P1-094"
+      ],
+      "learning_objective": "แปลงอัตราการเกิดผลิตภัณฑ์เป็นอัตราการหายไปของสารตั้งต้น",
+      "common_mistake": "สลับอัตราส่วนเป็น 4/2",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 4e-06,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "mul_div",
+        "values": [
+          2,
+          0.24,
+          4,
+          30.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-009",
+      "topic_id": "K02",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "ถ้าเพิ่ม [A] เป็น 2 เท่าแล้ว initial rate เพิ่มเป็น 4 เท่า อันดับต่อ A เท่ากับเท่าใด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 21,
+          "printed_slide_number": 20
+        }
+      ],
+      "correct_answer": "C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "เขียน 4=2^m",
+      "hints": [
+        "เขียน 4=2^m",
+        "ใช้ลอการิทึมหรือกำลังที่รู้จัก",
+        "ถามว่า 2 ยกกำลังใดได้ 4"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: หา partial order จากอัตราส่วน initial rates",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก C สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: C — 2",
+        "5. Common Misconception: ตอบ 4 เพราะเห็นอัตราเพิ่ม 4 เท่า"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_p1_ids": [
+        "K-P1-021"
+      ],
+      "learning_objective": "หา partial order จากอัตราส่วน initial rates",
+      "common_mistake": "ตอบ 4 เพราะเห็นอัตราเพิ่ม 4 เท่า",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "0"
+        },
+        {
+          "id": "B",
+          "text_th": "1"
+        },
+        {
+          "id": "C",
+          "text_th": "2"
+        },
+        {
+          "id": "D",
+          "text_th": "4"
+        }
+      ],
+      "correct_option_id": "C",
+      "option_explanations": {
+        "A": "อันดับศูนย์ทำให้อัตราไม่เปลี่ยน",
+        "B": "อันดับหนึ่งให้อัตราเพิ่ม 2 เท่า",
+        "C": "2^2=4 จึงเป็นอันดับสอง",
+        "D": "สับสนตัวคูณอัตรากับเลขชี้กำลัง"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-010",
+      "topic_id": "K02",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "rate=k[A][B]^2 เมื่อ [A]=0.10 M, [B]=0.20 M และ k=2.50 M^-2 s^-1 จงหา rate",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 21,
+          "printed_slide_number": 20
+        }
+      ],
+      "correct_answer": 0.01,
+      "tolerance": 1e-05,
+      "unit": "M s^-1",
+      "hint_th": "แทนค่าตามเลขชี้กำลัง",
+      "hints": [
+        "แทนค่าตามเลขชี้กำลัง",
+        "ยก [B] กำลังสองก่อน",
+        "คำนวณ 2.50×0.10×0.20²"
+      ],
+      "solution_steps": [
+        "1. Given: k=2.50 M^-2 s^-1, [A]=0.10 M, [B]=0.20 M",
+        "2. Find: คำนวณอัตราจาก rate law",
+        "3. Formula: rate=k[A][B]^2",
+        "4. Substitute: 2.50(0.10)(0.20)^2",
+        "5. Calculate: 0.0100",
+        "6. Check Units: M^-2 s^-1×M×M²=M s^-1",
+        "7. Final Answer: 0.01 M s^-1",
+        "8. Common Mistake: ลืมยกกำลังสองของ [B]"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_p1_ids": [
+        "K-P1-021"
+      ],
+      "learning_objective": "คำนวณอัตราจาก rate law",
+      "common_mistake": "ลืมยกกำลังสองของ [B]",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "product",
+        "values": [
+          2.5,
+          0.1,
+          0.2,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "P-K-011",
+      "topic_id": "K02",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยาอันดับรวม 2 มี rate=0.036 M s^-1 เมื่อ [A]=0.30 M และ rate=k[A]^2 จงหา k",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 26,
+          "printed_slide_number": 25
+        }
+      ],
+      "correct_answer": 0.4,
+      "tolerance": 0.0004,
+      "unit": "M^-1 s^-1",
+      "hint_th": "จัดรูปหา k",
+      "hints": [
+        "จัดรูปหา k",
+        "หาร rate ด้วย [A]²",
+        "คำนวณ 0.036/0.30²"
+      ],
+      "solution_steps": [
+        "1. Given: rate=0.036 M s^-1, [A]=0.30 M",
+        "2. Find: หาค่าคงที่อัตราและหน่วยจาก rate law",
+        "3. Formula: k=rate/[A]^2",
+        "4. Substitute: 0.036/(0.30)^2",
+        "5. Calculate: 0.400",
+        "6. Check Units: (M s^-1)/M²=M^-1 s^-1",
+        "7. Final Answer: 0.4 M^-1 s^-1",
+        "8. Common Mistake: ให้หน่วย k เป็น s^-1 แบบอันดับหนึ่ง"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_p1_ids": [
+        "K-P1-026"
+      ],
+      "learning_objective": "หาค่าคงที่อัตราและหน่วยจาก rate law",
+      "common_mistake": "ให้หน่วย k เป็น s^-1 แบบอันดับหนึ่ง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0004,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div_square",
+        "values": [
+          0.036,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "P-K-012",
+      "topic_id": "K02",
+      "type": "numerical",
+      "question_format": "data-table-interpretation",
+      "difficulty": "hard",
+      "prompt_th": "ทดลองพบว่าเมื่อ [A] เพิ่ม 3 เท่า rate เพิ่ม 9 เท่า และเมื่อ [B] เพิ่ม 2 เท่า rate ไม่เปลี่ยน ถ้า rate=0.018 M s^-1 ที่ [A]=0.20 M จงหา k",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 26,
+          "printed_slide_number": 25
+        }
+      ],
+      "correct_answer": 0.45,
+      "tolerance": 0.00045,
+      "unit": "M^-1 s^-1",
+      "hint_th": "หา order ของ A และ B จากตัวคูณ",
+      "hints": [
+        "หา order ของ A และ B จากตัวคูณ",
+        "3^m=9 และ 2^n=1",
+        "ได้ rate=k[A]² แล้วคำนวณ 0.018/0.20²"
+      ],
+      "solution_steps": [
+        "1. Given: rate=0.018 M s^-1, [A]=0.20 M; A×3→rate×9, B×2→ไม่เปลี่ยน",
+        "2. Find: วิเคราะห์อันดับย่อยแล้วหาค่าคงที่อัตรา",
+        "3. Formula: rate=k[A]^2[B]^0",
+        "4. Substitute: 0.018/(0.20)^2",
+        "5. Calculate: 0.450",
+        "6. Check Units: อันดับรวม 2 ทำให้ k มี M^-1 s^-1",
+        "7. Final Answer: 0.45 M^-1 s^-1",
+        "8. Common Mistake: นำ [B] มาคูณทั้งที่เป็นอันดับศูนย์"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "related_p1_ids": [
+        "K-P1-021",
+        "K-P1-026"
+      ],
+      "learning_objective": "วิเคราะห์อันดับย่อยแล้วหาค่าคงที่อัตรา",
+      "common_mistake": "นำ [B] มาคูณทั้งที่เป็นอันดับศูนย์",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.00045,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div_square",
+        "values": [
+          0.018,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "P-K-013",
+      "topic_id": "K03",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "กราฟใดเป็นเส้นตรงสำหรับปฏิกิริยาอันดับหนึ่ง?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 35,
+          "printed_slide_number": 34
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "นึกถึงรูป y=mx+b",
+      "hints": [
+        "นึกถึงรูป y=mx+b",
+        "อันดับหนึ่งมี logarithm",
+        "ln[A] มี slope=-k"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: เลือก linear plot ของ integrated rate law",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — ln[A] กับ t",
+        "5. Common Misconception: สลับกราฟอันดับหนึ่งกับอันดับสอง"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "related_p1_ids": [
+        "K-P1-035"
+      ],
+      "learning_objective": "เลือก linear plot ของ integrated rate law",
+      "common_mistake": "สลับกราฟอันดับหนึ่งกับอันดับสอง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "[A] กับ t"
+        },
+        {
+          "id": "B",
+          "text_th": "ln[A] กับ t"
+        },
+        {
+          "id": "C",
+          "text_th": "1/[A] กับ t"
+        },
+        {
+          "id": "D",
+          "text_th": "rate กับ t เสมอ"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "เป็น linear form ของอันดับศูนย์",
+        "B": "ln[A]=ln[A]0-kt",
+        "C": "เป็น linear form ของอันดับสอง",
+        "D": "ไม่ใช่เกณฑ์มาตรฐานระบุอันดับ"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-014",
+      "topic_id": "K03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยาอันดับศูนย์มี [A]0=0.80 M และ k=0.050 M min^-1 หลัง 6.0 min เหลือ [A] เท่าใด",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 30
+        }
+      ],
+      "correct_answer": 0.5,
+      "tolerance": 0.0005,
+      "unit": "M",
+      "hint_th": "อันดับศูนย์ลดเชิงเส้น",
+      "hints": [
+        "อันดับศูนย์ลดเชิงเส้น",
+        "ใช้ [A]=[A]0-kt",
+        "แทน 0.80-(0.050)(6.0)"
+      ],
+      "solution_steps": [
+        "1. Given: [A]0=0.80 M, k=0.050 M min^-1, t=6.0 min",
+        "2. Find: ใช้ integrated zero-order law",
+        "3. Formula: [A]=[A]0-kt",
+        "4. Substitute: 0.80-(0.050)(6.0)",
+        "5. Calculate: 0.50",
+        "6. Check Units: k×t=(M min^-1)(min)=M",
+        "7. Final Answer: 0.5 M",
+        "8. Common Mistake: ใช้ exponential decay ซึ่งเป็นอันดับหนึ่ง"
+      ],
+      "related_formula_ids": [
+        "F-K-003"
+      ],
+      "related_p1_ids": [],
+      "learning_objective": "ใช้ integrated zero-order law",
+      "common_mistake": "ใช้ exponential decay ซึ่งเป็นอันดับหนึ่ง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "subtract_product",
+        "values": [
+          0.8,
+          0.05,
+          6.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-015",
+      "topic_id": "K03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยาอันดับหนึ่งมี [A]0=0.500 M, k=0.0200 min^-1 จงหา [A] ที่ 30.0 min",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 42,
+          "printed_slide_number": 41
+        }
+      ],
+      "correct_answer": 0.2744,
+      "tolerance": 0.0003,
+      "unit": "M",
+      "hint_th": "ใช้ exponential form",
+      "hints": [
+        "ใช้ exponential form",
+        "คำนวณ kt ก่อน",
+        "[A]=0.500e^(-0.0200×30.0)"
+      ],
+      "solution_steps": [
+        "1. Given: [A]0=0.500 M, k=0.0200 min^-1, t=30.0 min",
+        "2. Find: คำนวณ concentration-time ของอันดับหนึ่ง",
+        "3. Formula: [A]=[A]0e^-kt",
+        "4. Substitute: 0.500e^[-(0.0200)(30.0)]",
+        "5. Calculate: 0.2744",
+        "6. Check Units: kt ไม่มีหน่วย จึงเหลือหน่วย M",
+        "7. Final Answer: 0.2744 M",
+        "8. Common Mistake: ใช้เครื่องหมายบวกใน exponent"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "related_p1_ids": [
+        "K-P1-035",
+        "K-P1-042"
+      ],
+      "learning_objective": "คำนวณ concentration-time ของอันดับหนึ่ง",
+      "common_mistake": "ใช้เครื่องหมายบวกใน exponent",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0003,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "first_order_conc",
+        "values": [
+          0.5,
+          0.02,
+          30.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-016",
+      "topic_id": "K03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "ปฏิกิริยาอันดับสอง A→products มี [A]0=0.100 M และ k=0.250 M^-1 s^-1 จงหา [A] หลัง 40.0 s",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 49,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 0.05,
+      "tolerance": 5e-05,
+      "unit": "M",
+      "hint_th": "เลือกสมการที่มี 1/[A]",
+      "hints": [
+        "เลือกสมการที่มี 1/[A]",
+        "หา 1/[A]=1/[A]0+kt",
+        "คำนวณ 10.0+(0.250)(40.0) แล้วกลับเศษส่วน"
+      ],
+      "solution_steps": [
+        "1. Given: [A]0=0.100 M, k=0.250 M^-1 s^-1, t=40.0 s",
+        "2. Find: ใช้ integrated second-order law",
+        "3. Formula: 1/[A]=1/[A]0+kt",
+        "4. Substitute: 1/[A]=10.0+10.0=20.0 M^-1",
+        "5. Calculate: [A]=1/20.0=0.0500",
+        "6. Check Units: ด้านขวามี M^-1 และกลับค่าได้ M",
+        "7. Final Answer: 0.05 M",
+        "8. Common Mistake: ลืมกลับเศษส่วนหลังหา 1/[A]"
+      ],
+      "related_formula_ids": [
+        "F-K-005"
+      ],
+      "related_p1_ids": [
+        "K-P1-049"
+      ],
+      "learning_objective": "ใช้ integrated second-order law",
+      "common_mistake": "ลืมกลับเศษส่วนหลังหา 1/[A]",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 5e-05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "second_order_conc",
+        "values": [
+          0.1,
+          0.25,
+          40.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-017",
+      "topic_id": "K03",
+      "type": "numerical",
+      "question_format": "data-table-interpretation",
+      "difficulty": "hard",
+      "prompt_th": "กราฟ 1/[A] กับ t มี slope=0.0800 M^-1 s^-1 และ intercept=5.00 M^-1 จงหา [A] ที่ t=50.0 s",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 49,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 0.1111,
+      "tolerance": 0.0002,
+      "unit": "M",
+      "hint_th": "slope คือ k และ intercept คือ 1/[A]0",
+      "hints": [
+        "slope คือ k และ intercept คือ 1/[A]0",
+        "ใช้ค่าจากเส้นตรงที่ t=50.0",
+        "1/[A]=5.00+0.0800×50.0 แล้วกลับค่า"
+      ],
+      "solution_steps": [
+        "1. Given: slope=0.0800 M^-1 s^-1, intercept=5.00 M^-1, t=50.0 s",
+        "2. Find: ตีความ slope/intercept ของกราฟอันดับสอง",
+        "3. Formula: 1/[A]=intercept+(slope)t",
+        "4. Substitute: 1/[A]=5.00+4.00=9.00 M^-1",
+        "5. Calculate: [A]=0.1111",
+        "6. Check Units: inverse concentration กลับค่าเป็น M",
+        "7. Final Answer: 0.1111 M",
+        "8. Common Mistake: อ่าน intercept เป็น [A]0 โดยไม่กลับค่า"
+      ],
+      "related_formula_ids": [
+        "F-K-005"
+      ],
+      "related_p1_ids": [
+        "K-P1-049"
+      ],
+      "learning_objective": "ตีความ slope/intercept ของกราฟอันดับสอง",
+      "common_mistake": "อ่าน intercept เป็น [A]0 โดยไม่กลับค่า",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0002,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "inverse_linear",
+        "values": [
+          5.0,
+          0.08,
+          50.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-018",
+      "topic_id": "K04",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "easy",
+      "prompt_th": "ปฏิกิริยาอันดับหนึ่งมี k=0.00300 s^-1 จงหา half-life",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 40,
+          "printed_slide_number": 39
+        }
+      ],
+      "correct_answer": 231.0,
+      "tolerance": 0.3,
+      "unit": "s",
+      "hint_th": "อันดับหนึ่งไม่ขึ้นกับ [A]0",
+      "hints": [
+        "อันดับหนึ่งไม่ขึ้นกับ [A]0",
+        "ใช้ ln2/k",
+        "คำนวณ 0.693/0.00300"
+      ],
+      "solution_steps": [
+        "1. Given: k=0.00300 s^-1",
+        "2. Find: คำนวณ half-life อันดับหนึ่ง",
+        "3. Formula: t1/2=ln2/k",
+        "4. Substitute: 0.693/0.00300",
+        "5. Calculate: 231",
+        "6. Check Units: (ไม่มีหน่วย)/(s^-1)=s",
+        "7. Final Answer: 231 s",
+        "8. Common Mistake: ใช้ 1/k โดยไม่คูณ ln2"
+      ],
+      "related_formula_ids": [
+        "F-K-007"
+      ],
+      "related_p1_ids": [
+        "K-P1-040"
+      ],
+      "learning_objective": "คำนวณ half-life อันดับหนึ่ง",
+      "common_mistake": "ใช้ 1/k โดยไม่คูณ ln2",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.3,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div",
+        "values": [
+          0.693,
+          0.003
+        ]
+      }
+    },
+    {
+      "id": "P-K-019",
+      "topic_id": "K04",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยาอันดับศูนย์มี [A]0=0.600 M และ k=0.0200 M min^-1 จงหา half-life",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 40,
+          "printed_slide_number": 39
+        }
+      ],
+      "correct_answer": 15.0,
+      "tolerance": 0.02,
+      "unit": "min",
+      "hint_th": "half-life อันดับศูนย์ขึ้นกับ [A]0",
+      "hints": [
+        "half-life อันดับศูนย์ขึ้นกับ [A]0",
+        "ใช้ [A]0/(2k)",
+        "แทน 0.600/[2(0.0200)]"
+      ],
+      "solution_steps": [
+        "1. Given: [A]0=0.600 M, k=0.0200 M min^-1",
+        "2. Find: คำนวณ half-life อันดับศูนย์",
+        "3. Formula: t1/2=[A]0/(2k)",
+        "4. Substitute: 0.600/[2(0.0200)]",
+        "5. Calculate: 15.0",
+        "6. Check Units: M/(M min^-1)=min",
+        "7. Final Answer: 15 min",
+        "8. Common Mistake: ใช้ 0.693/k กับทุกอันดับ"
+      ],
+      "related_formula_ids": [
+        "F-K-006"
+      ],
+      "related_p1_ids": [
+        "K-P1-040"
+      ],
+      "learning_objective": "คำนวณ half-life อันดับศูนย์",
+      "common_mistake": "ใช้ 0.693/k กับทุกอันดับ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.02,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div",
+        "values": [
+          0.6,
+          2,
+          0.02
+        ]
+      }
+    },
+    {
+      "id": "P-K-020",
+      "topic_id": "K04",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "ปฏิกิริยาอันดับสองมี k=0.500 M^-1 min^-1 ถ้าเพิ่ม [A]0 จาก 0.100 เป็น 0.200 M อัตราส่วน t1/2,new/t1/2,old เท่าใด",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 40,
+          "printed_slide_number": 39
+        }
+      ],
+      "correct_answer": 0.5,
+      "tolerance": 0.001,
+      "unit": null,
+      "hint_th": "อันดับสอง t1/2 แปรผกผันกับ [A]0",
+      "hints": [
+        "อันดับสอง t1/2 แปรผกผันกับ [A]0",
+        "ตั้งอัตราส่วนโดย k ตัดกัน",
+        "ratio=[A]old/[A]new=0.100/0.200"
+      ],
+      "solution_steps": [
+        "1. Given: [A]old=0.100 M, [A]new=0.200 M, k คงที่",
+        "2. Find: เปรียบเทียบ half-life อันดับสองเมื่อความเข้มข้นต้นเปลี่ยน",
+        "3. Formula: t1/2=1/(k[A]0)",
+        "4. Substitute: ratio=[A]old/[A]new",
+        "5. Calculate: 0.500",
+        "6. Check Units: เป็นอัตราส่วนไร้หน่วย",
+        "7. Final Answer: 0.5",
+        "8. Common Mistake: คิดว่า half-life อันดับสองคงที่"
+      ],
+      "related_formula_ids": [
+        "F-K-008"
+      ],
+      "related_p1_ids": [
+        "K-P1-040"
+      ],
+      "learning_objective": "เปรียบเทียบ half-life อันดับสองเมื่อความเข้มข้นต้นเปลี่ยน",
+      "common_mistake": "คิดว่า half-life อันดับสองคงที่",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.001,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div",
+        "values": [
+          0.1,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "P-K-021",
+      "topic_id": "K05",
+      "type": "multiple-choice",
+      "question_format": "energy-diagram-interpretation",
+      "difficulty": "easy",
+      "prompt_th": "energy profile มี Ereactant=20, Etransition=65, Eproduct=35 kJ mol^-1 ข้อใดถูกต้อง?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 61,
+          "printed_slide_number": 60
+        }
+      ],
+      "correct_answer": "D",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "Ea วัดจาก reactant ถึง transition state",
+      "hints": [
+        "Ea วัดจาก reactant ถึง transition state",
+        "ΔH=Eproduct-Ereactant",
+        "คำนวณ 65-20 และ 35-20"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: อ่าน forward activation energy และ reaction enthalpy",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก D สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: D — Ea,f=45 และ ΔH=+15",
+        "5. Common Misconception: สลับ Ea กับ ΔH"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_p1_ids": [
+        "K-P1-061"
+      ],
+      "learning_objective": "อ่าน forward activation energy และ reaction enthalpy",
+      "common_mistake": "สลับ Ea กับ ΔH",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "Ea,f=35 และ ΔH=-15"
+        },
+        {
+          "id": "B",
+          "text_th": "Ea,f=45 และ ΔH=-15"
+        },
+        {
+          "id": "C",
+          "text_th": "Ea,f=30 และ ΔH=+45"
+        },
+        {
+          "id": "D",
+          "text_th": "Ea,f=45 และ ΔH=+15"
+        }
+      ],
+      "correct_option_id": "D",
+      "option_explanations": {
+        "A": "ใช้ระดับ product แทน transition state",
+        "B": "เครื่องหมาย ΔH ผิด",
+        "C": "คำนวณทั้งสองค่าผิด",
+        "D": "Ea,f=65-20 และ ΔH=35-20"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-022",
+      "topic_id": "K05",
+      "type": "numerical",
+      "question_format": "energy-diagram-interpretation",
+      "difficulty": "medium",
+      "prompt_th": "Ereactant=12, Etransition=52, Eproduct=2 kJ mol^-1 จงหา reverse activation energy",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 61,
+          "printed_slide_number": 60
+        }
+      ],
+      "correct_answer": 50.0,
+      "tolerance": 0.05,
+      "unit": "kJ mol^-1",
+      "hint_th": "เริ่มจาก product ไป transition state",
+      "hints": [
+        "เริ่มจาก product ไป transition state",
+        "Ea,rev=ETS-Eproduct",
+        "คำนวณ 52-2"
+      ],
+      "solution_steps": [
+        "1. Given: ETS=52, Eproduct=2 kJ mol^-1",
+        "2. Find: คำนวณ reverse activation energy จาก energy profile",
+        "3. Formula: Ea,rev=ETS-Eproduct",
+        "4. Substitute: 52-2",
+        "5. Calculate: 50",
+        "6. Check Units: ผลต่างระดับพลังงานเป็น kJ mol^-1",
+        "7. Final Answer: 50 kJ mol^-1",
+        "8. Common Mistake: ลบจาก reactant ซึ่งให้ forward Ea"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_p1_ids": [
+        "K-P1-061"
+      ],
+      "learning_objective": "คำนวณ reverse activation energy จาก energy profile",
+      "common_mistake": "ลบจาก reactant ซึ่งให้ forward Ea",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "subtract",
+        "values": [
+          52,
+          2
+        ]
+      }
+    },
+    {
+      "id": "P-K-023",
+      "topic_id": "K05",
+      "type": "conceptual",
+      "question_format": "energy-diagram-interpretation",
+      "difficulty": "medium",
+      "prompt_th": "ตัวเร่งปฏิกิริยาเปลี่ยน Ea และ ΔH ของปฏิกิริยาอย่างไร?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 61,
+          "printed_slide_number": 60
+        }
+      ],
+      "correct_answer": "ลด Ea ของเส้นทางไปข้างหน้าและย้อนกลับ แต่ไม่เปลี่ยน ΔH",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "แยก kinetic barrier จาก state function",
+      "hints": [
+        "แยก kinetic barrier จาก state function",
+        "catalyst ให้เส้นทางใหม่",
+        "ระดับ reactant/product เดิมจึง ΔH เดิม"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: อธิบายผลของ catalyst ต่อ energy profile",
+        "2. Scientific Principle: ใช้นิยามและเงื่อนไขที่ระบุในบทเรียน",
+        "3. Apply: ลด Ea ของเส้นทางไปข้างหน้าและย้อนกลับ แต่ไม่เปลี่ยน ΔH",
+        "4. Correct Answer: ลด Ea ของเส้นทางไปข้างหน้าและย้อนกลับ แต่ไม่เปลี่ยน ΔH",
+        "5. Common Misconception: กล่าวว่าตัวเร่งทำให้ ΔH ลดลง"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_p1_ids": [
+        "K-P1-061"
+      ],
+      "learning_objective": "อธิบายผลของ catalyst ต่อ energy profile",
+      "common_mistake": "กล่าวว่าตัวเร่งทำให้ ΔH ลดลง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "short-text",
+      "grading_policy": {
+        "mode": "accepted-text",
+        "accepted_answers": [
+          "ลด ea แต่ไม่เปลี่ยน delta h",
+          "ลดพลังงานก่อกัมมันต์แต่ไม่เปลี่ยนเอนทัลปี",
+          "ลด ea ของทั้งสองทิศทางแต่ไม่เปลี่ยน ΔH"
+        ],
+        "case_sensitive": false
+      }
+    },
+    {
+      "id": "P-K-024",
+      "topic_id": "K05",
+      "type": "numerical",
+      "question_format": "energy-diagram-interpretation",
+      "difficulty": "hard",
+      "prompt_th": "energy profile มี Ea,f=72 kJ mol^-1 และ ΔH=-18 kJ mol^-1 จงหา Ea,reverse",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 61,
+          "printed_slide_number": 60
+        }
+      ],
+      "correct_answer": 90.0,
+      "tolerance": 0.09,
+      "unit": "kJ mol^-1",
+      "hint_th": "สำหรับ exothermic product ต่ำกว่า reactant",
+      "hints": [
+        "สำหรับ exothermic product ต่ำกว่า reactant",
+        "Ea,rev=Ea,f-ΔH",
+        "แทน 72-(-18)"
+      ],
+      "solution_steps": [
+        "1. Given: Ea,f=72 kJ mol^-1, ΔH=-18 kJ mol^-1",
+        "2. Find: เชื่อม Ea ไปข้างหน้า ย้อนกลับ และ ΔH",
+        "3. Formula: Ea,rev=Ea,f-ΔH",
+        "4. Substitute: 72-(-18)",
+        "5. Calculate: 90",
+        "6. Check Units: ทุกพจน์เป็น kJ mol^-1",
+        "7. Final Answer: 90 kJ mol^-1",
+        "8. Common Mistake: บวก ΔH โดยไม่รักษาเครื่องหมายลบ"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_p1_ids": [
+        "K-P1-061"
+      ],
+      "learning_objective": "เชื่อม Ea ไปข้างหน้า ย้อนกลับ และ ΔH",
+      "common_mistake": "บวก ΔH โดยไม่รักษาเครื่องหมายลบ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.09,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "subtract",
+        "values": [
+          72,
+          -18
+        ]
+      }
+    },
+    {
+      "id": "P-K-025",
+      "topic_id": "K06",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "เมื่อนำอุณหภูมิ 25 °C ไปใช้ในสมการ Arrhenius ต้องใช้ค่าใด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 91,
+          "printed_slide_number": 90
+        }
+      ],
+      "correct_answer": "C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "สมการต้องใช้ absolute temperature",
+      "hints": [
+        "สมการต้องใช้ absolute temperature",
+        "K=°C+273.15",
+        "25+273.15"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: แปลงอุณหภูมิเป็น Kelvin ก่อนใช้ Arrhenius",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก C สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: C — 298.15 K",
+        "5. Common Misconception: ใช้ 25 ในพจน์ 1/T"
+      ],
+      "related_formula_ids": [
+        "F-K-009",
+        "F-K-010"
+      ],
+      "related_p1_ids": [
+        "K-P1-091"
+      ],
+      "learning_objective": "แปลงอุณหภูมิเป็น Kelvin ก่อนใช้ Arrhenius",
+      "common_mistake": "ใช้ 25 ในพจน์ 1/T",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "25 K"
+        },
+        {
+          "id": "B",
+          "text_th": "248.15 K"
+        },
+        {
+          "id": "C",
+          "text_th": "298.15 K"
+        },
+        {
+          "id": "D",
+          "text_th": "325.15 K"
+        }
+      ],
+      "correct_option_id": "C",
+      "option_explanations": {
+        "A": "ห้ามใช้ Celsius ตรง ๆ",
+        "B": "ลบ 273.15 ผิดทิศ",
+        "C": "25+273.15=298.15 K",
+        "D": "บวก 300 แทน 273.15"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-026",
+      "topic_id": "K06",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ถ้า A=1.00×10^12 s^-1, Ea=50.0 kJ mol^-1 ที่ 298.15 K จงหา k",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 91,
+          "printed_slide_number": 90
+        }
+      ],
+      "correct_answer": 1737.0,
+      "tolerance": 2.0,
+      "unit": "s^-1",
+      "hint_th": "แปลง Ea เป็น J mol^-1",
+      "hints": [
+        "แปลง Ea เป็น J mol^-1",
+        "ใช้ k=Ae^(-Ea/RT)",
+        "แทน 50000/[8.314(298.15)] ใน exponent"
+      ],
+      "solution_steps": [
+        "1. Given: A=1.00e12 s^-1, Ea=50000 J mol^-1, T=298.15 K",
+        "2. Find: คำนวณ k จาก Arrhenius equation",
+        "3. Formula: k=A exp(-Ea/RT)",
+        "4. Substitute: 1.00e12 exp[-50000/(8.314×298.15)]",
+        "5. Calculate: 1.737e3",
+        "6. Check Units: exponent ไร้หน่วยและ k มีหน่วยเดียวกับ A",
+        "7. Final Answer: 1737 s^-1",
+        "8. Common Mistake: ใช้ Ea=50.0 โดยไม่แปลง kJ เป็น J"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "related_p1_ids": [
+        "K-P1-091"
+      ],
+      "learning_objective": "คำนวณ k จาก Arrhenius equation",
+      "common_mistake": "ใช้ Ea=50.0 โดยไม่แปลง kJ เป็น J",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 2.0,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "arrhenius",
+        "values": [
+          1000000000000.0,
+          50000,
+          8.314,
+          298.15
+        ]
+      }
+    },
+    {
+      "id": "P-K-027",
+      "topic_id": "K06",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "k เพิ่มจาก 1.20×10^-3 เป็น 4.80×10^-3 s^-1 เมื่อ T เพิ่มจาก 300.0 เป็น 330.0 K จงหา Ea",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 91,
+          "printed_slide_number": 90
+        }
+      ],
+      "correct_answer": 38021.0,
+      "tolerance": 60.0,
+      "unit": "J mol^-1",
+      "hint_th": "ใช้อัตราส่วน k2/k1",
+      "hints": [
+        "ใช้อัตราส่วน k2/k1",
+        "ln(k2/k1)=Ea/R(1/T1-1/T2)",
+        "คำนวณ 8.314 ln4 /(1/300-1/330)"
+      ],
+      "solution_steps": [
+        "1. Given: k2/k1=4.00, T1=300.0 K, T2=330.0 K",
+        "2. Find: หา activation energy จาก two-temperature Arrhenius equation",
+        "3. Formula: Ea=R ln(k2/k1)/(1/T1-1/T2)",
+        "4. Substitute: 8.314 ln4 /(1/300.0-1/330.0)",
+        "5. Calculate: 3.8021e4",
+        "6. Check Units: R เป็น J mol^-1 K^-1 และส่วนต่าง reciprocal temperature เป็น K^-1",
+        "7. Final Answer: 38021 J mol^-1",
+        "8. Common Mistake: สลับ 1/T ทำให้ Ea ติดลบ"
+      ],
+      "related_formula_ids": [
+        "F-K-010"
+      ],
+      "related_p1_ids": [
+        "K-P1-091"
+      ],
+      "learning_objective": "หา activation energy จาก two-temperature Arrhenius equation",
+      "common_mistake": "สลับ 1/T ทำให้ Ea ติดลบ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 60.0,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "arrhenius_two_temp",
+        "values": [
+          8.314,
+          4.0,
+          300.0,
+          330.0
+        ]
+      }
+    },
+    {
+      "id": "P-K-028",
+      "topic_id": "K07",
+      "type": "multiple-choice",
+      "question_format": "reaction-mechanism-analysis",
+      "difficulty": "easy",
+      "prompt_th": "กลไก: (1) A+B→I (ช้า), (2) I+C→D (เร็ว) สารใดเป็น intermediate?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 74,
+          "printed_slide_number": 73
+        }
+      ],
+      "correct_answer": "C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "มองหาสารที่เกิดในขั้นหนึ่ง",
+      "hints": [
+        "มองหาสารที่เกิดในขั้นหนึ่ง",
+        "สารนั้นต้องถูกใช้ในขั้นถัดไป",
+        "I ตัดกันเมื่อรวม elementary steps"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ระบุ reaction intermediate",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก C สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: C — I",
+        "5. Common Misconception: เลือกสารที่อยู่ใน slow step โดยไม่ดูการเกิด/ใช้"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "K-P1-074"
+      ],
+      "learning_objective": "ระบุ reaction intermediate",
+      "common_mistake": "เลือกสารที่อยู่ใน slow step โดยไม่ดูการเกิด/ใช้",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "A"
+        },
+        {
+          "id": "B",
+          "text_th": "B"
+        },
+        {
+          "id": "C",
+          "text_th": "I"
+        },
+        {
+          "id": "D",
+          "text_th": "D"
+        }
+      ],
+      "correct_option_id": "C",
+      "option_explanations": {
+        "A": "A เป็น reactant รวม",
+        "B": "B เป็น reactant รวม",
+        "C": "I ถูกสร้างแล้วถูกใช้และไม่อยู่ในสมการรวม",
+        "D": "D เป็น product"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-029",
+      "topic_id": "K07",
+      "type": "conceptual",
+      "question_format": "reaction-mechanism-analysis",
+      "difficulty": "easy",
+      "prompt_th": "เพราะเหตุใดจึงไม่ควรเขียน rate law จากสัมประสิทธิ์ของสมการรวมสำหรับกลไกหลายขั้น?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 77,
+          "printed_slide_number": 76
+        }
+      ],
+      "correct_answer": "เพราะ rate law ขึ้นกับ elementary step และกลไก โดยเฉพาะ rate-determining step ไม่ได้กำหนดจากสมการรวมเสมอ",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "แยก overall equation จาก elementary step",
+      "hints": [
+        "แยก overall equation จาก elementary step",
+        "อันดับจาก stoichiometry ใช้ได้โดยตรงเฉพาะ elementary step",
+        "RDS ควบคุมอัตราและอาจมี intermediate"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: อธิบายข้อจำกัดของการอนุมาน rate law จาก overall reaction",
+        "2. Scientific Principle: ใช้นิยามและเงื่อนไขที่ระบุในบทเรียน",
+        "3. Apply: เพราะ rate law ขึ้นกับ elementary step และกลไก โดยเฉพาะ rate-determining step ไม่ได้กำหนดจากสมการรวมเสมอ",
+        "4. Correct Answer: เพราะ rate law ขึ้นกับ elementary step และกลไก โดยเฉพาะ rate-determining step ไม่ได้กำหนดจากสมการรวมเสมอ",
+        "5. Common Misconception: ใช้สัมประสิทธิ์รวมเป็นอันดับเสมอ"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "K-P1-077"
+      ],
+      "learning_objective": "อธิบายข้อจำกัดของการอนุมาน rate law จาก overall reaction",
+      "common_mistake": "ใช้สัมประสิทธิ์รวมเป็นอันดับเสมอ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "short-text",
+      "grading_policy": {
+        "mode": "accepted-text",
+        "accepted_answers": [
+          "rate law ขึ้นกับกลไกไม่ใช่สมการรวม",
+          "ต้องรู้ elementary step หรือ rate determining step",
+          "อันดับปฏิกิริยาไม่จำเป็นต้องเท่ากับสัมประสิทธิ์สมการรวม"
+        ],
+        "case_sensitive": false
+      }
+    },
+    {
+      "id": "P-K-030",
+      "topic_id": "K07",
+      "type": "multiple-choice",
+      "question_format": "reaction-mechanism-analysis",
+      "difficulty": "medium",
+      "prompt_th": "กลไก (1) NO2+NO2→NO3+NO (ช้า), (2) NO3+CO→NO2+CO2 (เร็ว) สมการรวมและ intermediate ที่ถูกต้องคือข้อใด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 77,
+          "printed_slide_number": 76
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "บวกสมการทั้งสองขั้น",
+      "hints": [
+        "บวกสมการทั้งสองขั้น",
+        "ตัด species ที่ปรากฏคนละข้าง",
+        "NO3 ถูกสร้างแล้วถูกใช้"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: รวม elementary steps และตัด intermediate",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — NO2+CO→NO+CO2; NO3 เป็น intermediate",
+        "5. Common Misconception: ไม่ตัด species ที่อยู่ทั้งสองข้าง"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "K-P1-074",
+        "K-P1-077"
+      ],
+      "learning_objective": "รวม elementary steps และตัด intermediate",
+      "common_mistake": "ไม่ตัด species ที่อยู่ทั้งสองข้าง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "2NO2+CO→NO+CO2; NO3 เป็น catalyst"
+        },
+        {
+          "id": "B",
+          "text_th": "NO2+CO→NO+CO2; NO3 เป็น intermediate"
+        },
+        {
+          "id": "C",
+          "text_th": "2NO2+CO→NO3+NO+CO2; NO2 เป็น intermediate"
+        },
+        {
+          "id": "D",
+          "text_th": "NO3+CO→NO2+CO2; NO เป็น intermediate"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "NO3 ถูกสร้างแล้วใช้ จึงเป็น intermediate ไม่ใช่ catalyst และ NO2 ต้องตัดหนึ่งโมล",
+        "B": "บวกขั้นแล้วตัด NO3 และ NO2 หนึ่งโมล เหลือสมการรวมนี้",
+        "C": "ยังไม่ตัด species ที่เกิดและใช้",
+        "D": "เป็นเพียงขั้นที่สอง"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-031",
+      "topic_id": "K08",
+      "type": "multiple-choice",
+      "question_format": "collision-theory",
+      "difficulty": "easy",
+      "prompt_th": "ข้อใดอธิบาย effective collision ได้ครบที่สุด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 162,
+          "printed_slide_number": 161
+        }
+      ],
+      "correct_answer": "D",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "มีมากกว่าการชนกันเฉย ๆ",
+      "hints": [
+        "มีมากกว่าการชนกันเฉย ๆ",
+        "ต้องผ่านทั้ง energy และ geometry",
+        "เลือกตัวเลือกที่กล่าวถึง Ea และ orientation"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ระบุเงื่อนไข effective collision",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก D สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: D — มีพลังงานอย่างน้อย Ea และมี orientation ที่เหมาะสม",
+        "5. Common Misconception: คิดว่าการชนทุกครั้งให้ผลิตภัณฑ์"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "K-P1-162"
+      ],
+      "learning_objective": "ระบุเงื่อนไข effective collision",
+      "common_mistake": "คิดว่าการชนทุกครั้งให้ผลิตภัณฑ์",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "โมเลกุลชนกันทุกครั้งจะเกิดปฏิกิริยา"
+        },
+        {
+          "id": "B",
+          "text_th": "มีพลังงานสูงอย่างเดียว"
+        },
+        {
+          "id": "C",
+          "text_th": "มีทิศทางถูกต้องอย่างเดียว"
+        },
+        {
+          "id": "D",
+          "text_th": "มีพลังงานอย่างน้อย Ea และมี orientation ที่เหมาะสม"
+        }
+      ],
+      "correct_option_id": "D",
+      "option_explanations": {
+        "A": "การชนส่วนใหญ่ไม่สำเร็จ",
+        "B": "ยังต้องมี orientation",
+        "C": "ยังต้องผ่าน energy barrier",
+        "D": "ครบทั้งพลังงานและการจัดวาง"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-K-032",
+      "topic_id": "K08",
+      "type": "conceptual",
+      "question_format": "collision-encounter-comparison",
+      "difficulty": "medium",
+      "prompt_th": "เปรียบเทียบ collision ในแก๊สกับ encounter ในสารละลายตามภาพผู้สอนแบบสั้น ๆ",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 162,
+          "printed_slide_number": 161
+        }
+      ],
+      "correct_answer": "ในแก๊สโมเลกุลชนแล้วแยกได้อิสระกว่า ส่วนในสารละลาย solvent cage ทำให้คู่โมเลกุลเกิด encounter และอาจชนซ้ำก่อนแยก",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "นึกถึงโมเลกุลตัวทำละลายรอบคู่ชน",
+      "hints": [
+        "นึกถึงโมเลกุลตัวทำละลายรอบคู่ชน",
+        "เปรียบเทียบการหลุดออกจากกัน",
+        "ใช้คำว่า solvent cage และ encounter"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: อธิบายผลของ physical environment ต่อการชน",
+        "2. Scientific Principle: ใช้นิยามและเงื่อนไขที่ระบุในบทเรียน",
+        "3. Apply: ในแก๊สโมเลกุลชนแล้วแยกได้อิสระกว่า ส่วนในสารละลาย solvent cage ทำให้คู่โมเลกุลเกิด encounter และอาจชนซ้ำก่อนแยก",
+        "4. Correct Answer: ในแก๊สโมเลกุลชนแล้วแยกได้อิสระกว่า ส่วนในสารละลาย solvent cage ทำให้คู่โมเลกุลเกิด encounter และอาจชนซ้ำก่อนแยก",
+        "5. Common Misconception: กล่าวว่าสารละลายไม่มีการชน"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "K-P1-162"
+      ],
+      "learning_objective": "อธิบายผลของ physical environment ต่อการชน",
+      "common_mistake": "กล่าวว่าสารละลายไม่มีการชน",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "short-text",
+      "grading_policy": {
+        "mode": "accepted-text",
+        "accepted_answers": [
+          "แก๊สชนแล้วแยก สารละลายมี solvent cage และ encounter",
+          "solution encounter ถูกกักด้วยตัวทำละลายและชนซ้ำได้",
+          "ในสารละลายเกิด encounter pair จาก solvent cage"
+        ],
+        "case_sensitive": false
+      }
+    },
+    {
+      "id": "P-E-007",
+      "topic_id": "E02",
+      "type": "multiple-choice",
+      "question_format": "conceptual-graph-interpretation",
+      "difficulty": "easy",
+      "prompt_th": "ในตัวกลางเดียวกัน ถ้า relative permittivity εr ลดลง โดยระยะและประจุคงที่ แรงไฟฟ้ามีแนวโน้มอย่างไร?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 18,
+          "printed_slide_number": 18
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ใช้รูปแปรผกผัน",
+      "hints": [
+        "ใช้รูปแปรผกผัน",
+        "F∝1/εr",
+        "ตัวหารลดลงทำให้ค่าเพิ่ม"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ตีความผลของ dielectric constant ต่อ electrostatic interaction",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — เพิ่มขึ้น",
+        "5. Common Misconception: คิดว่า εr ลดแล้วแรงลดตาม"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "E-P1-018"
+      ],
+      "learning_objective": "ตีความผลของ dielectric constant ต่อ electrostatic interaction",
+      "common_mistake": "คิดว่า εr ลดแล้วแรงลดตาม",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "ลดลง"
+        },
+        {
+          "id": "B",
+          "text_th": "เพิ่มขึ้น"
+        },
+        {
+          "id": "C",
+          "text_th": "คงที่"
+        },
+        {
+          "id": "D",
+          "text_th": "เป็นศูนย์"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "แรงแปรผกผันกับ εr",
+        "B": "εr ลดจึงแรงเพิ่ม",
+        "C": "ละเลยสมบัติตัวกลาง",
+        "D": "ไม่มีเหตุผลให้เป็นศูนย์"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-008",
+      "topic_id": "E02",
+      "type": "conceptual",
+      "question_format": "conceptual-graph-interpretation",
+      "difficulty": "medium",
+      "prompt_th": "จากข้อมูลผู้สอน น้ำมี εr≈78.54 ที่ 25 °C และ ≈55.33 ที่ 100 °C สรุปแนวโน้มใดได้โดยไม่ overgeneralize?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 18,
+          "printed_slide_number": 18
+        }
+      ],
+      "correct_answer": "สำหรับน้ำในช่วงข้อมูลนี้ εr ลดลงเมื่ออุณหภูมิเพิ่มจาก 25 เป็น 100 °C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ระบุสารและช่วงอุณหภูมิ",
+      "hints": [
+        "ระบุสารและช่วงอุณหภูมิ",
+        "เปรียบเทียบ 78.54 กับ 55.33",
+        "หลีกเลี่ยงคำว่า solvent ทุกชนิด"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ตีความกราฟ dielectric constant ภายในช่วงที่ให้",
+        "2. Scientific Principle: ใช้นิยามและเงื่อนไขที่ระบุในบทเรียน",
+        "3. Apply: สำหรับน้ำในช่วงข้อมูลนี้ εr ลดลงเมื่ออุณหภูมิเพิ่มจาก 25 เป็น 100 °C",
+        "4. Correct Answer: สำหรับน้ำในช่วงข้อมูลนี้ εr ลดลงเมื่ออุณหภูมิเพิ่มจาก 25 เป็น 100 °C",
+        "5. Common Misconception: สรุปว่าตัวทำละลายทุกชนิดมีแนวโน้มเหมือนกัน"
+      ],
+      "related_formula_ids": [],
+      "related_p1_ids": [
+        "E-P1-018"
+      ],
+      "learning_objective": "ตีความกราฟ dielectric constant ภายในช่วงที่ให้",
+      "common_mistake": "สรุปว่าตัวทำละลายทุกชนิดมีแนวโน้มเหมือนกัน",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "short-text",
+      "grading_policy": {
+        "mode": "accepted-text",
+        "accepted_answers": [
+          "epsilon r ของน้ำลดลงเมื่ออุณหภูมิเพิ่มในช่วง 25 ถึง 100 c",
+          "ค่าคงที่ไดอิเล็กทริกของน้ำลดลงจาก 78.54 เป็น 55.33",
+          "สำหรับน้ำช่วงนี้ relative permittivity ลดเมื่อ temperature เพิ่ม"
+        ],
+        "case_sensitive": false
+      }
+    },
+    {
+      "id": "P-E-009",
+      "topic_id": "E03",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "หน่วยใดตรงกับ conductance G?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 13,
+          "printed_slide_number": 13
+        }
+      ],
+      "correct_answer": "A",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "G เป็นส่วนกลับของ R",
+      "hints": [
+        "G เป็นส่วนกลับของ R",
+        "หน่วยส่วนกลับของ ohm คือ siemens",
+        "เลือก S"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: แยกคำศัพท์ สัญลักษณ์ และหน่วยทางไฟฟ้า",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก A สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: A — S",
+        "5. Common Misconception: สับสน G กับ κ หรือ Λm"
+      ],
+      "related_formula_ids": [
+        "F-E-001"
+      ],
+      "related_p1_ids": [
+        "E-P1-013"
+      ],
+      "learning_objective": "แยกคำศัพท์ สัญลักษณ์ และหน่วยทางไฟฟ้า",
+      "common_mistake": "สับสน G กับ κ หรือ Λm",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "S"
+        },
+        {
+          "id": "B",
+          "text_th": "Ω"
+        },
+        {
+          "id": "C",
+          "text_th": "S cm^-1"
+        },
+        {
+          "id": "D",
+          "text_th": "S cm² mol^-1"
+        }
+      ],
+      "correct_option_id": "A",
+      "option_explanations": {
+        "A": "Siemens เป็นหน่วย conductance",
+        "B": "Ω เป็น resistance",
+        "C": "เป็น conductivity",
+        "D": "เป็น molar conductivity"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-010",
+      "topic_id": "E03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ตัวนำมี resistance 250 Ω จงหา conductance",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 31,
+          "printed_slide_number": 31
+        }
+      ],
+      "correct_answer": 0.004,
+      "tolerance": 4e-06,
+      "unit": "S",
+      "hint_th": "G เป็นส่วนกลับของ R",
+      "hints": [
+        "G เป็นส่วนกลับของ R",
+        "ใช้ G=1/R",
+        "คำนวณ 1/250"
+      ],
+      "solution_steps": [
+        "1. Given: R=250 Ω",
+        "2. Find: คำนวณ conductance จาก resistance",
+        "3. Formula: G=1/R",
+        "4. Substitute: 1/250",
+        "5. Calculate: 0.00400",
+        "6. Check Units: Ω^-1=S",
+        "7. Final Answer: 0.004 S",
+        "8. Common Mistake: ตอบ 250 S โดยไม่กลับค่า"
+      ],
+      "related_formula_ids": [
+        "F-E-001"
+      ],
+      "related_p1_ids": [
+        "E-P1-013"
+      ],
+      "learning_objective": "คำนวณ conductance จาก resistance",
+      "common_mistake": "ตอบ 250 S โดยไม่กลับค่า",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 4e-06,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "reciprocal",
+        "values": [
+          250
+        ]
+      }
+    },
+    {
+      "id": "P-E-011",
+      "topic_id": "E03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "สารละลายมี κ=1.50×10^-4 S cm^-1 และ c=0.00200 mol L^-1 จงหา Λm",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 75.0,
+      "tolerance": 0.08,
+      "unit": "S cm2 mol^-1",
+      "hint_th": "ตรวจหน่วย κ และ c",
+      "hints": [
+        "ตรวจหน่วย κ และ c",
+        "ใช้ Λm=1000κ/c",
+        "แทน 1000(1.50e-4)/0.00200"
+      ],
+      "solution_steps": [
+        "1. Given: κ=1.50e-4 S cm^-1, c=0.00200 mol L^-1",
+        "2. Find: คำนวณ molar conductivity พร้อมตัวประกอบ 1000",
+        "3. Formula: Λm=1000κ/c",
+        "4. Substitute: 1000(1.50e-4)/0.00200",
+        "5. Calculate: 75.0",
+        "6. Check Units: ตัวประกอบ 1000 แปลง L เป็น cm³",
+        "7. Final Answer: 75 S cm2 mol^-1",
+        "8. Common Mistake: ลืมตัวประกอบ 1000"
+      ],
+      "related_formula_ids": [
+        "F-E-002"
+      ],
+      "related_p1_ids": [
+        "E-P1-013",
+        "E-P1-048"
+      ],
+      "learning_objective": "คำนวณ molar conductivity พร้อมตัวประกอบ 1000",
+      "common_mistake": "ลืมตัวประกอบ 1000",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.08,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "mul_div",
+        "values": [
+          1000,
+          0.00015,
+          0.002
+        ]
+      }
+    },
+    {
+      "id": "P-E-012",
+      "topic_id": "E03",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "เซลล์มี conductance G=2.00×10^-4 S และ cell constant=1.25 cm^-1 จงหา conductivity κ",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 34,
+          "printed_slide_number": 34
+        }
+      ],
+      "correct_answer": 0.00025,
+      "tolerance": 2.5e-07,
+      "unit": "S cm^-1",
+      "hint_th": "κ เท่ากับ G คูณ cell constant",
+      "hints": [
+        "κ เท่ากับ G คูณ cell constant",
+        "ตรวจหน่วย S×cm^-1",
+        "คำนวณ 2.00e-4×1.25"
+      ],
+      "solution_steps": [
+        "1. Given: G=2.00e-4 S, cell constant=1.25 cm^-1",
+        "2. Find: เชื่อม conductance กับ cell geometry",
+        "3. Formula: κ=G(l/A)=G×cell constant",
+        "4. Substitute: (2.00e-4)(1.25)",
+        "5. Calculate: 2.50e-4",
+        "6. Check Units: S×cm^-1=S cm^-1",
+        "7. Final Answer: 0.00025 S cm^-1",
+        "8. Common Mistake: หารด้วย cell constant แทนคูณ"
+      ],
+      "related_formula_ids": [
+        "F-E-001"
+      ],
+      "related_p1_ids": [
+        "E-P1-013"
+      ],
+      "learning_objective": "เชื่อม conductance กับ cell geometry",
+      "common_mistake": "หารด้วย cell constant แทนคูณ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 2.5e-07,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "product",
+        "values": [
+          0.0002,
+          1.25
+        ]
+      }
+    },
+    {
+      "id": "P-E-013",
+      "topic_id": "E03",
+      "type": "numerical",
+      "question_format": "multi-step-calculation",
+      "difficulty": "hard",
+      "prompt_th": "AgBr solution มี κsolution=8.20×10^-8 และ κwater=1.70×10^-8 S cm^-1; Λ°AgBr=130.0 S cm² mol^-1 จงหา Ksp โดยสมมติ AgBr แตกตัวสมบูรณ์",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 66,
+          "printed_slide_number": 66
+        }
+      ],
+      "correct_answer": 2.5e-13,
+      "tolerance": 3e-15,
+      "unit": null,
+      "hint_th": "ลบ solvent blank ก่อน",
+      "hints": [
+        "ลบ solvent blank ก่อน",
+        "หา S=1000κ/Λ°",
+        "κ=6.50e-8 แล้ว S=5.00e-7 M และ Ksp=S²"
+      ],
+      "solution_steps": [
+        "1. Given: κsolution=8.20e-8, κwater=1.70e-8 S cm^-1, Λ°=130.0",
+        "2. Find: คำนวณ solubility และ Ksp จาก corrected conductivity",
+        "3. Formula: κ=κsolution-κwater; S=1000κ/Λ°; Ksp=S²",
+        "4. Substitute: κ=6.50e-8; S=1000(6.50e-8)/130.0=5.00e-7",
+        "5. Calculate: Ksp=(5.00e-7)^2=2.50e-13",
+        "6. Check Units: S เป็น mol L^-1; Ksp สำหรับ 1:1 มีหน่วยเชิง concentration² แต่มักรายงานไร้หน่วยเชิง thermodynamic",
+        "7. Final Answer: 2.5e-13",
+        "8. Common Mistake: นำ conductivity ของน้ำไปรวมแทนลบ"
+      ],
+      "related_formula_ids": [
+        "F-E-005"
+      ],
+      "related_p1_ids": [
+        "E-P1-066"
+      ],
+      "learning_objective": "คำนวณ solubility และ Ksp จาก corrected conductivity",
+      "common_mistake": "นำ conductivity ของน้ำไปรวมแทนลบ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 3e-15,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "agbr_ksp",
+        "values": [
+          8.2e-08,
+          1.7e-08,
+          130.0
+        ]
+      }
+    },
+    {
+      "id": "P-E-014",
+      "topic_id": "E04",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "easy",
+      "prompt_th": "weak electrolyte มี Λm=25.0 และ Λ°m=400.0 S cm² mol^-1 จงหา degree of dissociation α",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 0.0625,
+      "tolerance": 0.0001,
+      "unit": null,
+      "hint_th": "α เป็นอัตราส่วน conductivity",
+      "hints": [
+        "α เป็นอัตราส่วน conductivity",
+        "ใช้ α=Λm/Λ°m",
+        "คำนวณ 25.0/400.0"
+      ],
+      "solution_steps": [
+        "1. Given: Λm=25.0, Λ°m=400.0",
+        "2. Find: คำนวณ degree of dissociation",
+        "3. Formula: α=Λm/Λ°m",
+        "4. Substitute: 25.0/400.0",
+        "5. Calculate: 0.0625",
+        "6. Check Units: หน่วยเหมือนกันตัดกัน",
+        "7. Final Answer: 0.0625",
+        "8. Common Mistake: รายงาน 6.25 เป็น α แทน 0.0625"
+      ],
+      "related_formula_ids": [
+        "F-E-003"
+      ],
+      "related_p1_ids": [
+        "E-P1-048"
+      ],
+      "learning_objective": "คำนวณ degree of dissociation",
+      "common_mistake": "รายงาน 6.25 เป็น α แทน 0.0625",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "div",
+        "values": [
+          25,
+          400
+        ]
+      }
+    },
+    {
+      "id": "P-E-015",
+      "topic_id": "E04",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "medium",
+      "prompt_th": "ข้อใดเป็นเงื่อนไขที่เหมาะกับ Ostwald dilution law ในบทนี้?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": "C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "พิจารณาว่าสมการใช้ degree of dissociation",
+      "hints": [
+        "พิจารณาว่าสมการใช้ degree of dissociation",
+        "ต้องมี equilibrium ของ weak electrolyte",
+        "เลือก weak 1:1 dilute solution"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ระบุ validity condition ของ Ostwald dilution law",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก C สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: C — weak 1:1 electrolyte ในสารละลายเจือจาง",
+        "5. Common Misconception: นำกฎไปใช้กับ strong electrolyte"
+      ],
+      "related_formula_ids": [
+        "F-E-004"
+      ],
+      "related_p1_ids": [
+        "E-P1-048"
+      ],
+      "learning_objective": "ระบุ validity condition ของ Ostwald dilution law",
+      "common_mistake": "นำกฎไปใช้กับ strong electrolyte",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "strong electrolyte เข้มข้น"
+        },
+        {
+          "id": "B",
+          "text_th": "สารไม่แตกตัว"
+        },
+        {
+          "id": "C",
+          "text_th": "weak 1:1 electrolyte ในสารละลายเจือจาง"
+        },
+        {
+          "id": "D",
+          "text_th": "ของแข็งไอออนิกบริสุทธิ์"
+        }
+      ],
+      "correct_option_id": "C",
+      "option_explanations": {
+        "A": "strong electrolyte ไม่เป็นไปตามสมมติฐานการแตกตัวแบบ weak",
+        "B": "ไม่มี equilibrium dissociation ให้คำนวณ",
+        "C": "ตรงกับแบบจำลองที่ใช้",
+        "D": "ไม่ใช่สารละลาย"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-016",
+      "topic_id": "E04",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "กรดอ่อนโมโนโปรติก c=0.0100 M และ α=0.0400 จงหา Ka ด้วย Ostwald law",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 1.667e-05,
+      "tolerance": 2e-08,
+      "unit": null,
+      "hint_th": "ใช้ Ka=cα²/(1-α)",
+      "hints": [
+        "ใช้ Ka=cα²/(1-α)",
+        "คำนวณ α² ก่อน",
+        "แทน 0.0100(0.0400)²/0.960"
+      ],
+      "solution_steps": [
+        "1. Given: c=0.0100 M, α=0.0400",
+        "2. Find: คำนวณ Ka จาก concentration และ degree of dissociation",
+        "3. Formula: Ka=cα²/(1-α)",
+        "4. Substitute: 0.0100(0.0400)^2/(0.960)",
+        "5. Calculate: 1.667e-5",
+        "6. Check Units: thermodynamic Ka มักรายงานไร้หน่วยภายใต้มาตรฐาน activity",
+        "7. Final Answer: 1.667e-05",
+        "8. Common Mistake: ประมาณ 1-α=1 โดยไม่บอกสมมติฐาน"
+      ],
+      "related_formula_ids": [
+        "F-E-004"
+      ],
+      "related_p1_ids": [
+        "E-P1-048"
+      ],
+      "learning_objective": "คำนวณ Ka จาก concentration และ degree of dissociation",
+      "common_mistake": "ประมาณ 1-α=1 โดยไม่บอกสมมติฐาน",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 2e-08,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "ostwald",
+        "values": [
+          0.01,
+          0.04
+        ]
+      }
+    },
+    {
+      "id": "P-E-017",
+      "topic_id": "E04",
+      "type": "numerical",
+      "question_format": "multi-step-calculation",
+      "difficulty": "hard",
+      "prompt_th": "สารละลาย weak acid c=0.00500 M มี Λm=30.0 และ Λ°m=390.0 S cm² mol^-1 จงหา Ka",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 3.205e-05,
+      "tolerance": 4e-08,
+      "unit": null,
+      "hint_th": "หา α จาก conductivity ก่อน",
+      "hints": [
+        "หา α จาก conductivity ก่อน",
+        "α=30.0/390.0",
+        "แทน α ใน cα²/(1-α)"
+      ],
+      "solution_steps": [
+        "1. Given: c=0.00500 M, Λm=30.0, Λ°m=390.0",
+        "2. Find: คำนวณ α แล้วหา Ka แบบหลายขั้น",
+        "3. Formula: α=Λm/Λ°m; Ka=cα²/(1-α)",
+        "4. Substitute: α=0.076923; Ka=0.00500(0.076923)^2/(0.923077)",
+        "5. Calculate: 3.205e-5",
+        "6. Check Units: α ไร้หน่วย; ใช้ concentration scale ตามโจทย์",
+        "7. Final Answer: 3.205e-05",
+        "8. Common Mistake: ใช้ Λm เป็น α โดยตรง"
+      ],
+      "related_formula_ids": [
+        "F-E-003",
+        "F-E-004"
+      ],
+      "related_p1_ids": [
+        "E-P1-048"
+      ],
+      "learning_objective": "คำนวณ α แล้วหา Ka แบบหลายขั้น",
+      "common_mistake": "ใช้ Λm เป็น α โดยตรง",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 4e-08,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "conductivity_ka",
+        "values": [
+          0.005,
+          30,
+          390
+        ]
+      }
+    },
+    {
+      "id": "P-E-018",
+      "topic_id": "E06",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "easy",
+      "prompt_th": "สารละลาย 0.0100 M NaCl มี ionic strength เท่าใด",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.01,
+      "tolerance": 1e-05,
+      "unit": "mol L^-1",
+      "hint_th": "แตก NaCl เป็น Na+ และ Cl-",
+      "hints": [
+        "แตก NaCl เป็น Na+ และ Cl-",
+        "ใช้ I=1/2Σcizi²",
+        "รวม 0.0100(1)² สองชนิด"
+      ],
+      "solution_steps": [
+        "1. Given: [Na+]=[Cl-]=0.0100 M, z=±1",
+        "2. Find: คำนวณ ionic strength ของ 1:1 electrolyte",
+        "3. Formula: I=1/2Σcizi²",
+        "4. Substitute: 0.5[0.0100+0.0100]",
+        "5. Calculate: 0.0100",
+        "6. Check Units: concentration scale เป็น mol L^-1",
+        "7. Final Answer: 0.01 mol L^-1",
+        "8. Common Mistake: ลืมตัวคูณ 1/2"
+      ],
+      "related_formula_ids": [
+        "F-E-006"
+      ],
+      "related_p1_ids": [
+        "E-P1-083"
+      ],
+      "learning_objective": "คำนวณ ionic strength ของ 1:1 electrolyte",
+      "common_mistake": "ลืมตัวคูณ 1/2",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "ionic_strength",
+        "terms": [
+          [
+            0.01,
+            1
+          ],
+          [
+            0.01,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P-E-019",
+      "topic_id": "E06",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "สารละลาย 0.0200 M CaCl2 มี ionic strength เท่าใด",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.06,
+      "tolerance": 6e-05,
+      "unit": "mol L^-1",
+      "hint_th": "[Cl-] เป็นสองเท่าของ salt concentration",
+      "hints": [
+        "[Cl-] เป็นสองเท่าของ salt concentration",
+        "ใช้ z² จึงไม่มีเครื่องหมายลบ",
+        "I=1/2[0.0200(2²)+0.0400(1²)]"
+      ],
+      "solution_steps": [
+        "1. Given: [Ca2+]=0.0200 M, [Cl-]=0.0400 M",
+        "2. Find: รวมความเข้มข้นและประจุของทุกไอออน",
+        "3. Formula: I=1/2Σcizi²",
+        "4. Substitute: 0.5[0.0200(4)+0.0400(1)]",
+        "5. Calculate: 0.0600",
+        "6. Check Units: แต่ละพจน์เป็น mol L^-1",
+        "7. Final Answer: 0.06 mol L^-1",
+        "8. Common Mistake: ใช้ [Cl-]=0.0200 M"
+      ],
+      "related_formula_ids": [
+        "F-E-006"
+      ],
+      "related_p1_ids": [
+        "E-P1-083"
+      ],
+      "learning_objective": "รวมความเข้มข้นและประจุของทุกไอออน",
+      "common_mistake": "ใช้ [Cl-]=0.0200 M",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 6e-05,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "ionic_strength",
+        "terms": [
+          [
+            0.02,
+            2
+          ],
+          [
+            0.04,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "P-E-020",
+      "topic_id": "E06",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "medium",
+      "prompt_th": "ข้อใดอธิบายข้อจำกัดของ Debye-Hückel limiting law ได้ถูกต้องที่สุด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "คำว่า limiting บอกช่วงใช้งาน",
+      "hints": [
+        "คำว่า limiting บอกช่วงใช้งาน",
+        "พิจารณา ionic strength ต่ำ",
+        "ค่าคงที่ A ขึ้นกับ solvent และ temperature"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ระบุ validity assumptions ของ DHLL",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — เหมาะกับสารละลายเจือจางมากและต้องระบุ solvent/temperature",
+        "5. Common Misconception: ใช้ DHLL นอกช่วงโดยไม่ qualification"
+      ],
+      "related_formula_ids": [
+        "F-E-007"
+      ],
+      "related_p1_ids": [
+        "E-P1-083"
+      ],
+      "learning_objective": "ระบุ validity assumptions ของ DHLL",
+      "common_mistake": "ใช้ DHLL นอกช่วงโดยไม่ qualification",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "ใช้ได้แม่นยำกับสารละลายเข้มข้นทุกชนิด"
+        },
+        {
+          "id": "B",
+          "text_th": "เหมาะกับสารละลายเจือจางมากและต้องระบุ solvent/temperature"
+        },
+        {
+          "id": "C",
+          "text_th": "ใช้ได้เฉพาะ non-electrolyte"
+        },
+        {
+          "id": "D",
+          "text_th": "ไม่ขึ้นกับประจุไอออน"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "limiting law เสื่อมความแม่นยำเมื่อ I สูง",
+        "B": "ตรงกับเงื่อนไขของกฎ",
+        "C": "กฎอธิบาย ionic activity",
+        "D": "มี z+z- ในสมการ"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-021",
+      "topic_id": "E06",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "ที่ 298 K ในน้ำ ใช้ log10γ±=-0.509|z+z-|√I สำหรับ MgCl2 ที่ I=0.0300 M จงหา γ±",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.6664,
+      "tolerance": 0.001,
+      "unit": null,
+      "hint_th": "สำหรับ MgCl2 ใช้ |z+z-|=2",
+      "hints": [
+        "สำหรับ MgCl2 ใช้ |z+z-|=2",
+        "คำนวณ log10γ± ก่อน",
+        "logγ=-0.509(2)√0.0300 แล้วทำ 10^x"
+      ],
+      "solution_steps": [
+        "1. Given: I=0.0300 M, |z+z-|=2, A=0.509",
+        "2. Find: คำนวณ mean ionic activity coefficient ด้วย DHLL",
+        "3. Formula: log10γ±=-A|z+z-|√I",
+        "4. Substitute: logγ=-0.17632",
+        "5. Calculate: γ=10^-0.17632=0.6664",
+        "6. Check Units: γ เป็นอัตราส่วนไร้หน่วย",
+        "7. Final Answer: 0.6664",
+        "8. Common Mistake: ใช้ผลคูณประจุเป็น 4 แทน |2×1|"
+      ],
+      "related_formula_ids": [
+        "F-E-007"
+      ],
+      "related_p1_ids": [
+        "E-P1-083"
+      ],
+      "learning_objective": "คำนวณ mean ionic activity coefficient ด้วย DHLL",
+      "common_mistake": "ใช้ผลคูณประจุเป็น 4 แทน |2×1|",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.001,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "dhll",
+        "values": [
+          0.509,
+          2,
+          0.03
+        ]
+      }
+    },
+    {
+      "id": "P-E-022",
+      "topic_id": "E06",
+      "type": "numerical",
+      "question_format": "multi-step-calculation",
+      "difficulty": "hard",
+      "prompt_th": "สารละลาย CaCl2 มี c=0.00500 M และ γ±=0.75 จงหา mean ionic activity a± บน concentration scale ที่นิยาม a±=γ±(c+ c-²)^(1/3)",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.005953,
+      "tolerance": 7e-06,
+      "unit": "mol L^-1",
+      "hint_th": "แตกตัวให้ c+=0.00500 และ c-=0.0100 M",
+      "hints": [
+        "แตกตัวให้ c+=0.00500 และ c-=0.0100 M",
+        "ใช้ geometric stoichiometric mean",
+        "คำนวณ 0.75(0.00500×0.0100²)^(1/3)"
+      ],
+      "solution_steps": [
+        "1. Given: c+=0.00500 M, c-=0.0100 M, γ±=0.75",
+        "2. Find: คำนวณ mean ionic activity สำหรับ electrolyte 1:2",
+        "3. Formula: a±=γ±(c+ c-²)^(1/3)",
+        "4. Substitute: 0.75(0.00500×0.0100²)^(1/3)",
+        "5. Calculate: 0.005953",
+        "6. Check Units: ตาม concentration convention ที่โจทย์กำหนด ได้ mol L^-1",
+        "7. Final Answer: 0.005953 mol L^-1",
+        "8. Common Mistake: ใช้ c ของเกลือแทน concentration ของ Cl-"
+      ],
+      "related_formula_ids": [
+        "F-E-008"
+      ],
+      "related_p1_ids": [
+        "E-P1-083"
+      ],
+      "learning_objective": "คำนวณ mean ionic activity สำหรับ electrolyte 1:2",
+      "common_mistake": "ใช้ c ของเกลือแทน concentration ของ Cl-",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 7e-06,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "mean_activity_12",
+        "values": [
+          0.75,
+          0.005,
+          0.01
+        ]
+      }
+    },
+    {
+      "id": "P-E-023",
+      "topic_id": "E07",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "ตามคำอธิบายผู้สอน salting-in หมายถึงข้อใด?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 89,
+          "printed_slide_number": 89
+        }
+      ],
+      "correct_answer": "A",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ดูทิศทางการเปลี่ยน solubility",
+      "hints": [
+        "ดูทิศทางการเปลี่ยน solubility",
+        "คำว่า in สื่อถึงสารอยู่ในสารละลายมากขึ้น",
+        "เลือก solubility เพิ่ม"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: แยก salting-in จาก salting-out",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก A สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: A — การเติม electrolyte ช่วงหนึ่งทำให้ apparent solubility เพิ่ม",
+        "5. Common Misconception: จำสลับ salting-in/out"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "related_p1_ids": [
+        "E-P1-089"
+      ],
+      "learning_objective": "แยก salting-in จาก salting-out",
+      "common_mistake": "จำสลับ salting-in/out",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "การเติม electrolyte ช่วงหนึ่งทำให้ apparent solubility เพิ่ม"
+        },
+        {
+          "id": "B",
+          "text_th": "การเติม electrolyte ทำให้ solubility ลดเสมอ"
+        },
+        {
+          "id": "C",
+          "text_th": "เกลือตกตะกอนทันทีทุกกรณี"
+        },
+        {
+          "id": "D",
+          "text_th": "ionic strength เป็นศูนย์"
+        }
+      ],
+      "correct_option_id": "A",
+      "option_explanations": {
+        "A": "เป็นนิยามเชิงแนวโน้มของ salting-in",
+        "B": "อธิบาย salting-out และ overgeneralize",
+        "C": "ไม่ใช่ความหมายทั่วไป",
+        "D": "การเติม electrolyte ทำให้ I ไม่เป็นศูนย์"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-024",
+      "topic_id": "E07",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "เหตุใดจึงไม่ควรสรุปว่าเติมเกลือแล้ว solubility ต้องเพิ่มเสมอ?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 89,
+          "printed_slide_number": 89
+        }
+      ],
+      "correct_answer": "C",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "หลีกเลี่ยงคำว่าเสมอ",
+      "hints": [
+        "หลีกเลี่ยงคำว่าเสมอ",
+        "พิจารณาทั้ง low/high ionic strength",
+        "specific interaction มีบทบาทได้"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ตีความเงื่อนไขที่ทำให้ salting trend ต่างกัน",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก C สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: C — เพราะช่วง ionic strength และ specific interactions อาจทำให้เกิด salting-in หรือ salting-out",
+        "5. Common Misconception: ใช้กฎช่วงเจือจางกับทุกความเข้มข้น"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "related_p1_ids": [
+        "E-P1-089"
+      ],
+      "learning_objective": "ตีความเงื่อนไขที่ทำให้ salting trend ต่างกัน",
+      "common_mistake": "ใช้กฎช่วงเจือจางกับทุกความเข้มข้น",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "เพราะ ionic strength ไม่เคยเปลี่ยน"
+        },
+        {
+          "id": "B",
+          "text_th": "เพราะ activity coefficient เท่ากับ 1 เสมอ"
+        },
+        {
+          "id": "C",
+          "text_th": "เพราะช่วง ionic strength และ specific interactions อาจทำให้เกิด salting-in หรือ salting-out"
+        },
+        {
+          "id": "D",
+          "text_th": "เพราะเกลือไม่มีไอออน"
+        }
+      ],
+      "correct_option_id": "C",
+      "option_explanations": {
+        "A": "เติม electrolyte ย่อมเปลี่ยน ionic environment",
+        "B": "γ เบี่ยงเบนจาก 1 ได้",
+        "C": "แนวโน้มขึ้นกับ regime/interaction",
+        "D": "เกลือแตกตัวเป็นไอออน"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-025",
+      "topic_id": "E07",
+      "type": "conceptual",
+      "question_format": "conceptual-short-answer",
+      "difficulty": "medium",
+      "prompt_th": "อธิบายความต่างเชิงคุณภาพระหว่าง salting-in และ salting-out โดยอ้างอิง solubility",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 89,
+          "printed_slide_number": 89
+        }
+      ],
+      "correct_answer": "salting-in คือ solubility เพิ่มเมื่อเพิ่ม electrolyte ในช่วงที่พิจารณา ส่วน salting-out คือ solubility ลดลงเมื่อ electrolyte สูงขึ้นหรือเกิด specific interactions ที่ลดการละลาย",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ตอบเป็นทิศทาง solubility",
+      "hints": [
+        "ตอบเป็นทิศทาง solubility",
+        "ระบุว่าขึ้นกับช่วง/เงื่อนไข",
+        "เปรียบเทียบ increase กับ decrease"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: อธิบาย salting effects โดยไม่ overgeneralize",
+        "2. Scientific Principle: ใช้นิยามและเงื่อนไขที่ระบุในบทเรียน",
+        "3. Apply: salting-in คือ solubility เพิ่มเมื่อเพิ่ม electrolyte ในช่วงที่พิจารณา ส่วน salting-out คือ solubility ลดลงเมื่อ electrolyte สูงขึ้นหรือเกิด specific interactions ที่ลดการละลาย",
+        "4. Correct Answer: salting-in คือ solubility เพิ่มเมื่อเพิ่ม electrolyte ในช่วงที่พิจารณา ส่วน salting-out คือ solubility ลดลงเมื่อ electrolyte สูงขึ้นหรือเกิด specific interactions ที่ลดการละลาย",
+        "5. Common Misconception: อธิบายทั้งสองคำว่าเหมือนกัน"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "related_p1_ids": [
+        "E-P1-089"
+      ],
+      "learning_objective": "อธิบาย salting effects โดยไม่ overgeneralize",
+      "common_mistake": "อธิบายทั้งสองคำว่าเหมือนกัน",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "short-text",
+      "grading_policy": {
+        "mode": "accepted-text",
+        "accepted_answers": [
+          "salting in solubility เพิ่ม salting out solubility ลด",
+          "salting-in เพิ่มการละลาย ส่วน salting-out ลดการละลาย",
+          "การละลายเพิ่มใน salting in และลดใน salting out"
+        ],
+        "case_sensitive": false
+      }
+    },
+    {
+      "id": "P-E-026",
+      "topic_id": "E09",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "ใน galvanic cell ข้อใดถูกต้อง?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 95,
+          "printed_slide_number": 95
+        }
+      ],
+      "correct_answer": "B",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "จำ AnOx RedCat",
+      "hints": [
+        "จำ AnOx RedCat",
+        "electron ออกจากแหล่ง oxidation",
+        "เลือก oxidation at anode"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ระบุ anode/cathode และ electron flow",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก B สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: B — oxidation ที่ anode และ electron ไหลจาก anode ไป cathode",
+        "5. Common Misconception: จำเครื่องหมายขั้วแทนกระบวนการ"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "related_p1_ids": [
+        "E-P1-095"
+      ],
+      "learning_objective": "ระบุ anode/cathode และ electron flow",
+      "common_mistake": "จำเครื่องหมายขั้วแทนกระบวนการ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "oxidation ที่ cathode"
+        },
+        {
+          "id": "B",
+          "text_th": "oxidation ที่ anode และ electron ไหลจาก anode ไป cathode"
+        },
+        {
+          "id": "C",
+          "text_th": "electron ไหลผ่าน salt bridge"
+        },
+        {
+          "id": "D",
+          "text_th": "anode เป็นขั้วบวกเสมอทุกเซลล์"
+        }
+      ],
+      "correct_option_id": "B",
+      "option_explanations": {
+        "A": "reduction เกิดที่ cathode",
+        "B": "ถูกทั้งตำแหน่ง oxidation และทิศ electron",
+        "C": "electron ไหลในวงจรภายนอก; ions เคลื่อนผ่าน salt bridge",
+        "D": "เครื่องหมายขึ้นกับชนิดเซลล์"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-027",
+      "topic_id": "E09",
+      "type": "multiple-choice",
+      "question_format": "electrochemical-cell-notation",
+      "difficulty": "medium",
+      "prompt_th": "cell notation ใดตรงกับ Zn(s)|Zn2+(aq)||Cu2+(aq)|Cu(s) ที่ทำงานเป็น galvanic cell?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 95,
+          "printed_slide_number": 95
+        }
+      ],
+      "correct_answer": "A",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "อ่านซ้ายเป็น oxidation",
+      "hints": [
+        "อ่านซ้ายเป็น oxidation",
+        "ขวาเป็น reduction",
+        "double line คือ salt bridge"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: ตีความ electrochemical cell notation",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก A สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: A — Zn เป็น anode ซ้าย; Cu เป็น cathode ขวา",
+        "5. Common Misconception: อ่าน notation จากขวาไปซ้าย"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "related_p1_ids": [
+        "E-P1-095"
+      ],
+      "learning_objective": "ตีความ electrochemical cell notation",
+      "common_mistake": "อ่าน notation จากขวาไปซ้าย",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "Zn เป็น anode ซ้าย; Cu เป็น cathode ขวา"
+        },
+        {
+          "id": "B",
+          "text_th": "Cu ถูก oxidize ที่ขวา"
+        },
+        {
+          "id": "C",
+          "text_th": "electron ไหลจาก Cu ไป Zn"
+        },
+        {
+          "id": "D",
+          "text_th": "double line คือเส้นลวดโลหะ"
+        }
+      ],
+      "correct_option_id": "A",
+      "option_explanations": {
+        "A": "notation วาง anode ซ้าย cathode ขวา",
+        "B": "Cu2+ ถูก reduce",
+        "C": "electron ไหล Zn→Cu",
+        "D": "double line แทน salt bridge/liquid junction"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-028",
+      "topic_id": "E09",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "E°red(Cu2+/Cu)=+0.340 V และ E°red(Zn2+/Zn)=-0.763 V จงหา E°cell สำหรับ Zn|Zn2+||Cu2+|Cu",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": 1.103,
+      "tolerance": 0.002,
+      "unit": "V",
+      "hint_th": "Cu เป็น cathode",
+      "hints": [
+        "Cu เป็น cathode",
+        "ใช้ Ecell=Ecathode-Eanode",
+        "คำนวณ 0.340-(-0.763)"
+      ],
+      "solution_steps": [
+        "1. Given: Ecathode=0.340 V, Eanode=-0.763 V",
+        "2. Find: คำนวณ standard cell potential จาก reduction potentials",
+        "3. Formula: E°cell=E°cathode-E°anode",
+        "4. Substitute: 0.340-(-0.763)",
+        "5. Calculate: 1.103",
+        "6. Check Units: ผลต่างศักย์มีหน่วย V",
+        "7. Final Answer: 1.103 V",
+        "8. Common Mistake: กลับเครื่องหมาย reduction potential ก่อนแล้วลบซ้ำ"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "related_p1_ids": [
+        "E-P1-095",
+        "E-P1-108"
+      ],
+      "learning_objective": "คำนวณ standard cell potential จาก reduction potentials",
+      "common_mistake": "กลับเครื่องหมาย reduction potential ก่อนแล้วลบซ้ำ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.002,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "subtract",
+        "values": [
+          0.34,
+          -0.763
+        ]
+      }
+    },
+    {
+      "id": "P-E-029",
+      "topic_id": "E09",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "hard",
+      "prompt_th": "เซลล์ใช้ E°red(A+/A)=+0.80 V และ E°red(B2+/B)=-0.20 V ถ้าปฏิกิริยา spontaneous ให้อิเล็กตรอน 2 mol จงหา E°cell",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": 1.0,
+      "tolerance": 0.001,
+      "unit": "V",
+      "hint_th": "คู่ที่ E°red สูงกว่าเป็น cathode",
+      "hints": [
+        "คู่ที่ E°red สูงกว่าเป็น cathode",
+        "ศักย์ไม่คูณด้วยจำนวน electron",
+        "คำนวณ 0.80-(-0.20)"
+      ],
+      "solution_steps": [
+        "1. Given: E°red,A=0.80 V, E°red,B=-0.20 V, n=2",
+        "2. Find: เลือก cathode/anode และคำนวณ E°cell โดยไม่คูณศักย์ด้วยสัมประสิทธิ์",
+        "3. Formula: E°cell=E°cathode-E°anode",
+        "4. Substitute: 0.80-(-0.20)",
+        "5. Calculate: 1.00",
+        "6. Check Units: V เป็น intensive quantity ไม่คูณด้วย n",
+        "7. Final Answer: 1 V",
+        "8. Common Mistake: คูณ E° ครึ่งเซลล์ด้วย 2 เพื่อ balance electron"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "related_p1_ids": [
+        "E-P1-108"
+      ],
+      "learning_objective": "เลือก cathode/anode และคำนวณ E°cell โดยไม่คูณศักย์ด้วยสัมประสิทธิ์",
+      "common_mistake": "คูณ E° ครึ่งเซลล์ด้วย 2 เพื่อ balance electron",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.001,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "subtract",
+        "values": [
+          0.8,
+          -0.2
+        ]
+      }
+    },
+    {
+      "id": "P-E-030",
+      "topic_id": "E10",
+      "type": "multiple-choice",
+      "question_format": "multiple-choice",
+      "difficulty": "easy",
+      "prompt_th": "ถ้า E°cell>0 ที่อุณหภูมิและ standard state ที่กำหนด ข้อใดถูกต้อง?",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": "A",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "ใช้ ΔG°=-nFE°",
+      "hints": [
+        "ใช้ ΔG°=-nFE°",
+        "E° บวกทำให้ ΔG° ลบ",
+        "lnK เป็นบวกจึง K>1"
+      ],
+      "solution_steps": [
+        "1. Identify Concept: เชื่อมเครื่องหมาย E°, ΔG° และ K",
+        "2. Scientific Principle: พิจารณานิยามและเงื่อนไขของระบบตามบทเรียน",
+        "3. Apply: ตัวเลือก A สอดคล้องกับหลักการโดยไม่เพิ่มสมมติฐาน",
+        "4. Correct Answer: A — ΔG°<0 และ K>1",
+        "5. Common Misconception: จำเครื่องหมาย ΔG° ผิด"
+      ],
+      "related_formula_ids": [
+        "F-E-010",
+        "F-E-012"
+      ],
+      "related_p1_ids": [
+        "E-P1-108"
+      ],
+      "learning_objective": "เชื่อมเครื่องหมาย E°, ΔG° และ K",
+      "common_mistake": "จำเครื่องหมาย ΔG° ผิด",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "single-choice",
+      "answer_options": [
+        {
+          "id": "A",
+          "text_th": "ΔG°<0 และ K>1"
+        },
+        {
+          "id": "B",
+          "text_th": "ΔG°>0 และ K<1"
+        },
+        {
+          "id": "C",
+          "text_th": "ΔG°=0 เสมอ"
+        },
+        {
+          "id": "D",
+          "text_th": "บอกทิศ spontaneous ไม่ได้"
+        }
+      ],
+      "correct_option_id": "A",
+      "option_explanations": {
+        "A": "ΔG°=-nFE° และ lnK=nFE°/RT",
+        "B": "เครื่องหมายกลับกัน",
+        "C": "เกิดเมื่อ equilibrium/E=0",
+        "D": "E° บอก thermodynamic direction ได้"
+      },
+      "grading_policy": {
+        "mode": "single-choice"
+      }
+    },
+    {
+      "id": "P-E-031",
+      "topic_id": "E10",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "เซลล์มี E°=0.250 V และ n=2 จงหา ΔG° โดยใช้ F=96485 C mol^-1",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": -48242.5,
+      "tolerance": 50,
+      "unit": "J mol^-1",
+      "hint_th": "รักษาเครื่องหมายลบใน ΔG°=-nFE°",
+      "hints": [
+        "รักษาเครื่องหมายลบใน ΔG°=-nFE°",
+        "แทน n=2",
+        "คำนวณ -2×96485×0.250"
+      ],
+      "solution_steps": [
+        "1. Given: E°=0.250 V, n=2, F=96485 C mol^-1",
+        "2. Find: คำนวณ standard Gibbs energy จาก E°cell",
+        "3. Formula: ΔG°=-nFE°",
+        "4. Substitute: -2(96485)(0.250)",
+        "5. Calculate: -4.82425e4",
+        "6. Check Units: C mol^-1×J C^-1=J mol^-1",
+        "7. Final Answer: -48242.5 J mol^-1",
+        "8. Common Mistake: ละเครื่องหมายลบ"
+      ],
+      "related_formula_ids": [
+        "F-E-010"
+      ],
+      "related_p1_ids": [
+        "E-P1-108"
+      ],
+      "learning_objective": "คำนวณ standard Gibbs energy จาก E°cell",
+      "common_mistake": "ละเครื่องหมายลบ",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 50,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "neg_product",
+        "values": [
+          2,
+          96485,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "P-E-032",
+      "topic_id": "E10",
+      "type": "numerical",
+      "question_format": "numerical-calculation",
+      "difficulty": "medium",
+      "prompt_th": "ที่ 298.15 K เซลล์ n=1 มี E°=0.1183 V จงหา K โดยใช้ log10K=nE°/0.05916",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": 100.0,
+      "tolerance": 0.2,
+      "unit": null,
+      "hint_th": "ใช้สมการฐานสิบที่ 298 K",
+      "hints": [
+        "ใช้สมการฐานสิบที่ 298 K",
+        "หา log10K ก่อน",
+        "0.1183/0.05916≈2 แล้ว K=10²"
+      ],
+      "solution_steps": [
+        "1. Given: n=1, E°=0.1183 V, T=298.15 K",
+        "2. Find: คำนวณ equilibrium constant จาก E°",
+        "3. Formula: log10K=nE°/0.05916",
+        "4. Substitute: log10K=0.1183/0.05916≈2.000",
+        "5. Calculate: K≈100",
+        "6. Check Units: K เป็นอัตราส่วน activity จึงไร้หน่วย",
+        "7. Final Answer: 100",
+        "8. Common Mistake: ตอบ logK แทน K"
+      ],
+      "related_formula_ids": [
+        "F-E-012"
+      ],
+      "related_p1_ids": [
+        "E-P1-108"
+      ],
+      "learning_objective": "คำนวณ equilibrium constant จาก E°",
+      "common_mistake": "ตอบ logK แทน K",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.2,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "equilibrium_k",
+        "values": [
+          1,
+          0.1183,
+          0.05916
+        ]
+      }
+    },
+    {
+      "id": "P-E-033",
+      "topic_id": "E10",
+      "type": "numerical",
+      "question_format": "multi-step-calculation",
+      "difficulty": "hard",
+      "prompt_th": "ที่ 298.15 K เซลล์ n=2 มี E°=0.300 V และ reaction quotient Q=100 จงหา E จาก E=E°-(0.05916/n)log10Q",
+      "source_classification": "ai-generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 119,
+          "printed_slide_number": 119
+        }
+      ],
+      "correct_answer": 0.24084,
+      "tolerance": 0.0003,
+      "unit": "V",
+      "hint_th": "Q=100 ทำให้ logQ=2",
+      "hints": [
+        "Q=100 ทำให้ logQ=2",
+        "หาร 0.05916 ด้วย n=2",
+        "E=0.300-(0.05916/2)(2)"
+      ],
+      "solution_steps": [
+        "1. Given: E°=0.300 V, n=2, Q=100, T=298.15 K",
+        "2. Find: ใช้ Nernst equation แยก standard และ non-standard potential",
+        "3. Formula: E=E°-(0.05916/n)log10Q",
+        "4. Substitute: 0.300-(0.05916/2)(2)",
+        "5. Calculate: 0.24084",
+        "6. Check Units: ทุกพจน์ศักย์เป็น V",
+        "7. Final Answer: 0.24084 V",
+        "8. Common Mistake: ใช้ lnQ กับค่าคงที่ 0.05916 ซึ่งเป็น log10"
+      ],
+      "related_formula_ids": [
+        "F-E-011"
+      ],
+      "related_p1_ids": [
+        "E-P1-108"
+      ],
+      "learning_objective": "ใช้ Nernst equation แยก standard และ non-standard potential",
+      "common_mistake": "ใช้ lnQ กับค่าคงที่ 0.05916 ซึ่งเป็น log10",
+      "validation_status": "VALIDATED",
+      "bookmarked_default": false,
+      "answer_format": "numeric",
+      "grading_policy": {
+        "mode": "numeric",
+        "absolute_tolerance": 0.0003,
+        "relative_tolerance": 0.001
+      },
+      "validation_spec": {
+        "op": "nernst_298",
+        "values": [
+          0.3,
+          0.05916,
+          2,
+          100
+        ]
+      }
+    }
+  ],
+  "phase_7b_metadata": {
+    "legacy_problem_count": 11,
+    "new_problem_count": 54,
+    "active_problem_count": 65,
+    "new_questions_validation_status": "VALIDATED"
+  }
+}

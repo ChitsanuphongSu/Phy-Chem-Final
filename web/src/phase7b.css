@@ -1,0 +1,12 @@
+.practice-filters{flex-wrap:wrap;align-items:center}
+.practice-filters select{min-height:44px}
+.star-filter{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:9px 13px}
+.star-filter input,.answer-options input{accent-color:var(--accent)}
+.answer-options{display:grid;gap:10px;margin:22px 0}
+.answer-options label{display:flex;gap:10px;align-items:flex-start;padding:13px;border:1px solid var(--border);border-radius:12px;background:var(--bg);cursor:pointer}
+.answer-options input{margin-top:5px}
+.hints{background:var(--secondary);padding:14px 14px 14px 38px;border-radius:12px}
+.option-explanations{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:10px 16px}
+.option-explanations p{margin:.5rem 0}
+button:disabled{cursor:not-allowed;opacity:.55}
+@media(max-width:620px){.practice-filters{align-items:stretch}.star-filter{justify-content:center}}

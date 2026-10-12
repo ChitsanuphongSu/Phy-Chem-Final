@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "problems": [
+    {
+      "id": "P-K-001",
+      "topic_id": "K01",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "สำหรับ 4NH3+3O2→2N2+6H2O ถ้า N2 เกิด 0.27 mol L^-1 s^-1 จงหาอัตราการเกิด H2O",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 94,
+          "printed_slide_number": 93
+        }
+      ],
+      "correct_answer": 0.81,
+      "tolerance": 0.01,
+      "unit": "mol L^-1 s^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Given: d[N2]/dt=0.27",
+        "Find: d[H2O]/dt",
+        "Formula: (1/2)d[N2]/dt=(1/6)d[H2O]/dt",
+        "Substitute: 6/2×0.27",
+        "Answer: 0.81 mol L^-1 s^-1",
+        "Unit verified"
+      ],
+      "related_formula_ids": [
+        "F-K-001"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-002",
+      "topic_id": "K02",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "ปฏิกิริยา S2O8^2- กับ I- มี rate=2.2×10^-4 M s^-1 ที่ [S2O8^2-]=0.080 M และ [I-]=0.034 M จงหา k เมื่อเป็นอันดับหนึ่งต่อสารทั้งคู่",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 26,
+          "printed_slide_number": 25
+        }
+      ],
+      "correct_answer": 0.0809,
+      "tolerance": 0.001,
+      "unit": "M^-1 s^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Given concentrations and rate",
+        "Use k=rate/([S2O8][I])",
+        "Substitute 2.2e-4/(0.080×0.034)",
+        "Answer 8.09e-2 M^-1 s^-1",
+        "Dimensional check: M s^-1 / M^2"
+      ],
+      "related_formula_ids": [
+        "F-K-002"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-003",
+      "topic_id": "K03",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "N2O5 เป็น first order, k=5.1×10^-4 s^-1, [A]0=0.25 M หลัง 3.2 min เหลือเท่าใด",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 42,
+          "printed_slide_number": 41
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 43,
+          "printed_slide_number": 42
+        }
+      ],
+      "correct_answer": 0.227,
+      "tolerance": 0.003,
+      "unit": "M",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Convert 3.2 min=192 s",
+        "Use [A]=[A]0e^-kt",
+        "Substitute 0.25e^(-5.1e-4×192)",
+        "Answer 0.227 M",
+        "Unit exponent is dimensionless"
+      ],
+      "related_formula_ids": [
+        "F-K-004"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-004",
+      "topic_id": "K04",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "ปฏิกิริยาอันดับหนึ่งมี k=0.00100 s^-1 จงหาครึ่งชีวิต",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 100,
+          "printed_slide_number": 99
+        }
+      ],
+      "correct_answer": 693,
+      "tolerance": 2,
+      "unit": "s",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use t1/2=ln2/k",
+        "0.693/0.00100",
+        "Answer 693 s"
+      ],
+      "related_formula_ids": [
+        "F-K-007"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-K-005",
+      "topic_id": "K06",
+      "type": "conceptual",
+      "difficulty": "medium",
+      "prompt_th": "เมื่ออุณหภูมิเพิ่มขึ้น สำหรับปฏิกิริยาทั่วไปที่กลไกไม่เปลี่ยน ค่า k โดยทั่วไปเป็นอย่างไร",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part1.pdf",
+          "pdf_page": 91,
+          "printed_slide_number": 90
+        }
+      ],
+      "correct_answer": "เพิ่มขึ้น",
+      "tolerance": null,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Arrhenius: k=Ae^-Ea/RT",
+        "T เพิ่มทำให้ exponent มีค่าน้อยลบ",
+        "k เพิ่ม"
+      ],
+      "related_formula_ids": [
+        "F-K-009"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-001",
+      "topic_id": "E04",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "สารละลาย CH3COOH 0.001028 M มี κ=4.95×10^-5 S cm^-1 และ Λ°=390.5 S cm2 mol^-1 จงหา Ka",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 48,
+          "printed_slide_number": 48
+        }
+      ],
+      "correct_answer": 1.78e-05,
+      "tolerance": 1e-06,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Λ=1000κ/c=48.15 S cm2 mol^-1",
+        "α=Λ/Λ°=0.1233",
+        "Ka=cα²/(1-α)",
+        "Answer 1.78×10^-5",
+        "α is dimensionless"
+      ],
+      "related_formula_ids": [
+        "F-E-002",
+        "F-E-003",
+        "F-E-004"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-002",
+      "topic_id": "E03",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt_th": "AgBr: Lsolution=6.99×10^-8 S cm^-1, Lwater=1.60×10^-8 S cm^-1, λ°Ag+=53.5 และ λ°Br-=68.0 S cm2 mol^-1 จงหา Ksp",
+      "source_classification": "source-derived-review",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 66,
+          "printed_slide_number": 66
+        }
+      ],
+      "correct_answer": 1.97e-13,
+      "tolerance": 1e-14,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Correct solvent blank: κ=6.99e-8-1.60e-8=5.39e-8 S cm^-1",
+        "Λ°=53.5+68.0=121.5 S cm2 mol^-1",
+        "S=1000κ/Λ°=4.44e-7 M",
+        "Ksp=S²=1.97e-13",
+        "Source handwriting shows 7.39e-8; flagged as arithmetic error"
+      ],
+      "related_formula_ids": [
+        "F-E-005"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-003",
+      "topic_id": "E06",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "0.01 M CuSO4 ที่ 298 K จงหา mean activity coefficient ด้วย DHLL (A=0.509)",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 83,
+          "printed_slide_number": 83
+        }
+      ],
+      "correct_answer": 0.392,
+      "tolerance": 0.005,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "I=1/2[(0.01)(2²)+(0.01)(-2)²]=0.04 M",
+        "logγ±=-0.509|2×-2|√0.04=-0.4072",
+        "γ±=10^-0.4072=0.392"
+      ],
+      "related_formula_ids": [
+        "F-E-006",
+        "F-E-007"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-004",
+      "topic_id": "E09",
+      "type": "numerical",
+      "difficulty": "easy",
+      "prompt_th": "กำหนด E°cathode=+0.031 V และ E°anode(as reduction)=-0.320 V จงหา E°cell",
+      "source_classification": "source-derived",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        }
+      ],
+      "correct_answer": 0.351,
+      "tolerance": 0.002,
+      "unit": "V",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use Ecell=Ecathode-Eanode",
+        "0.031-(-0.320)",
+        "Answer +0.351 V"
+      ],
+      "related_formula_ids": [
+        "F-E-009"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-005",
+      "topic_id": "E10",
+      "type": "numerical",
+      "difficulty": "medium",
+      "prompt_th": "สำหรับ E°cell=0.351 V และ n=2 จงหา ΔG°",
+      "source_classification": "generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 109,
+          "printed_slide_number": 109
+        }
+      ],
+      "correct_answer": -67.7,
+      "tolerance": 0.5,
+      "unit": "kJ mol^-1",
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "Use ΔG°=-nFE°",
+        "Substitute -2×96485×0.351 J mol^-1",
+        "Convert to kJ",
+        "Answer -67.7 kJ mol^-1"
+      ],
+      "related_formula_ids": [
+        "F-E-010"
+      ],
+      "bookmarked_default": false
+    },
+    {
+      "id": "P-E-006",
+      "topic_id": "E10",
+      "type": "numerical",
+      "difficulty": "hard",
+      "prompt_th": "สำหรับ E°cell=0.351 V, n=2 ที่ 298 K จงหา K",
+      "source_classification": "generated-from-source",
+      "source_references": [
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 108,
+          "printed_slide_number": 108
+        },
+        {
+          "document": "PhCh-SC202301 Physical Chemistry Part2.pdf",
+          "pdf_page": 116,
+          "printed_slide_number": 116
+        }
+      ],
+      "correct_answer": 750000000000.0,
+      "tolerance": 150000000000.0,
+      "unit": null,
+      "hint_th": "เลือกสูตรจากชนิดข้อมูลและตรวจหน่วยก่อนแทนค่า",
+      "solution_steps": [
+        "log10K=nE°/0.05916",
+        "=2×0.351/0.05916=11.866",
+        "K=10^11.866=7.35×10^11"
+      ],
+      "related_formula_ids": [
+        "F-E-012"
+      ],
+      "bookmarked_default": false
+    }
+  ]
+}
